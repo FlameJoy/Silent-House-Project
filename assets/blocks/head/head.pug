@@ -7,9 +7,60 @@ section.head
       .head-content-wrap 
         .head-content-benefits
           .head-content-benefits-container
-            .head-content-benefit__box
-            .head-content-benefit__box
-            .head-content-benefit__box
-            .head-content-benefit__box
-          .head-content-benefits__btn
+            .head-content-benefit-box
+              .benefit__name Гарантия на ремонт 
+              .benefit__text Предоставляем гарантию и услугу страхования на ремонт сроком до 7 лет! 
+            .head-content-benefit-box
+              .benefit__name Собственный склад 
+              .benefit__text У нас есть свой склад с услугой доставки материалов на объект. 
+            .head-content-benefit-box
+              .benefit__name Большой опыт 
+              .benefit__text Наша компания уже 10 лет на рынке, и мы сможем выполнить любой проект. 
+            .head-content-benefit-box 
+              .benefit__name Прозрачный договор 
+              .benefit__text У нас строгий договор и ответственность на каждом этапе работ. 
+          .head-content-benefits-btn
         .head-content-calc
+          .calc-container
+            .calc-header 
+              .calc-header__title Расскажите нам о вашей квартире и мы рассчитаем смету за 30 мин! 
+            form.calc-form
+              .calc-form-radiocontainer-wrap
+                fieldset.renovation-type 
+                  legend.renovation-type__title Какой ремонт хотите? 
+                  p.renovation-type-box
+                    input.renovation-type__input(type="radio" name="renovation-type" required)
+                    span.calc-input__text Косметический
+                  p.renovation-type-box
+                    input.renovation-type__input(type="radio" name="renovation-type" required)
+                    span.calc-input__text Под ключ
+                  p.renovation-type-box
+                    input.renovation-type__input(type="radio" name="renovation-type" required)
+                    span.calc-input__text Евроремонт
+                fieldset.building-type 
+                  legend.building-type__title Какой ремонт хотите? 
+                  p.building-type-box
+                    input.building-type__input(type="radio" name="building-type " required)
+                    span.calc-input__text Новостройка
+                  p.building-type-box
+                    input.building-type__input(type="radio" name="building-type " required)
+                    span.calc-input__text Вторичное жильё
+              .calc-square
+                fieldset.calc-square-wrap 
+                  legend.calc-square__title Вам нужны материалы?
+                  input.calc-square__num(type="text" value="10")
+                  input.calc-square__range(type="range" name="square" id="square" min='10' max='250' step="10")
+              .calc-materials 
+                fieldset.materials 
+                  legend.materials__title Вам нужны материалы?
+                  p.materials__checkbox
+                    input(type="checkbox")
+                    span.calc-input__text Нужны черновые
+                  p.materials__checkbox
+                    input(type="checkbox")
+                    span.calc-input__text Нужны чистовые
+              .calc-btn-container
+                button.calc__btn(type="submit") Рассчитать
+
+
+

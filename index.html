@@ -43,14 +43,78 @@
           <div class="head-content-wrap"> 
             <div class="head-content-benefits">
               <div class="head-content-benefits-container">
-                <div class="head-content-benefit__box"></div>
-                <div class="head-content-benefit__box"></div>
-                <div class="head-content-benefit__box"></div>
-                <div class="head-content-benefit__box"></div>
+                <div class="head-content-benefit-box">
+                  <div class="benefit__name">Гарантия на ремонт </div>
+                  <div class="benefit__text">Предоставляем гарантию и услугу страхования на ремонт сроком до 7 лет! </div>
+                </div>
+                <div class="head-content-benefit-box">
+                  <div class="benefit__name">Собственный склад </div>
+                  <div class="benefit__text">У нас есть свой склад с услугой доставки материалов на объект. </div>
+                </div>
+                <div class="head-content-benefit-box">
+                  <div class="benefit__name">Большой опыт </div>
+                  <div class="benefit__text">Наша компания уже 10 лет на рынке, и мы сможем выполнить любой проект. </div>
+                </div>
+                <div class="head-content-benefit-box"> 
+                  <div class="benefit__name">Прозрачный договор </div>
+                  <div class="benefit__text">У нас строгий договор и ответственность на каждом этапе работ. </div>
+                </div>
               </div>
-              <div class="head-content-benefits__btn"></div>
+              <div class="head-content-benefits-btn"></div>
             </div>
-            <div class="head-content-calc"></div>
+            <div class="head-content-calc">
+              <div class="calc-container">
+                <div class="calc-header"> 
+                  <div class="calc-header__title">Расскажите нам о вашей квартире и мы рассчитаем смету за 30 мин! </div>
+                </div>
+                <form class="calc-form">
+                  <div class="calc-form-radiocontainer-wrap">
+                    <fieldset class="renovation-type"> 
+                      <legend class="renovation-type__title">Какой ремонт хотите? </legend>
+                      <p class="renovation-type-box">
+                        <input class="renovation-type__input" type="radio" name="renovation-type" required><span class="calc-input__text">Косметический</span>
+                      </p>
+                      <p class="renovation-type-box">
+                        <input class="renovation-type__input" type="radio" name="renovation-type" required><span class="calc-input__text">Под ключ</span>
+                      </p>
+                      <p class="renovation-type-box">
+                        <input class="renovation-type__input" type="radio" name="renovation-type" required><span class="calc-input__text">Евроремонт</span>
+                      </p>
+                    </fieldset>
+                    <fieldset class="building-type"> 
+                      <legend class="building-type__title">Какой ремонт хотите? </legend>
+                      <p class="building-type-box">
+                        <input class="building-type__input" type="radio" name="building-type " required><span class="calc-input__text">Новостройка</span>
+                      </p>
+                      <p class="building-type-box">
+                        <input class="building-type__input" type="radio" name="building-type " required><span class="calc-input__text">Вторичное жильё</span>
+                      </p>
+                    </fieldset>
+                  </div>
+                  <div class="calc-square">
+                    <fieldset class="calc-square-wrap"> 
+                      <legend class="calc-square__title">Вам нужны материалы?</legend>
+                      <input class="calc-square__num" type="text" value="10">
+                      <input class="calc-square__range" type="range" name="square" id="square" min="10" max="250" step="10">
+                    </fieldset>
+                  </div>
+                  <div class="calc-materials"> 
+                    <fieldset class="materials"> 
+                      <legend class="materials__title">Вам нужны материалы?</legend>
+                      <p class="materials__checkbox">
+                        <input type="checkbox"><span class="calc-input__text">Нужны черновые</span>
+                      </p>
+                      <p class="materials__checkbox">
+                        <input type="checkbox"><span class="calc-input__text">Нужны чистовые</span>
+                      </p>
+                    </fieldset>
+                  </div>
+                  <div class="calc-btn-container">
+                    <button class="calc__btn" type="submit">Рассчитать</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>

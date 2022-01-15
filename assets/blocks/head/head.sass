@@ -2,18 +2,21 @@
   background: url(../images/dest/background-1.jpg) center no-repeat
   background-size: cover
   position: relative
-  height: 800px
-  z-index: -5
+  height: 900px
+  z-index: -1
   &::after
     display: block
     content: ''
     position: absolute
-    background-color: #00000071
+    background-color: #0000009d
     top: 0
     left: 0
-    height: 800px
+    height: 900px
     width: 100%
-    z-index: -4
+    z-index: -1
+  &-container
+    position: relative
+    z-index: 10
   &-title-wrap
     margin: 0 auto
   &__title
@@ -25,13 +28,86 @@
     @extend %text-shadow
     color: #fff
 
+  // ----------
+  // Content
+  // ----------
   .head-content-wrap
     @extend %flex-row
+    margin-top: 100px
 
-  .head-content-benefits-container
-    display: grid
-    grid-template-rows: 1fr 1fr
-    grid-template-columns: 1fr 1fr
+  .head-content-benefits
+    max-width: 50%
+    &-container
+      display: grid
+      grid-template-rows: 1fr 1fr
+      grid-template-columns: 1fr 1fr
+      gap: 30px
+
+  .head-content-benefit-box::before
+    content: "\f560"
+    font-family: FontAwesome
+    color: #feab29
+
+  .head-content-benefit-box:nth-child(2)::before
+    content: "\f4de"
+  .head-content-benefit-box:nth-child(3)::before
+    content: "\f164"
+  .head-content-benefit-box:nth-child(4)::before
+    content: "\f56c"
+
+  // ----------
+  // Benefits
+  // ----------
+  .benefit
+    &__name
+      font-family: "Play",sans-serif
+      font-weight: 400
+      line-height: 1.2em
+      color: #fff
+      @extend %text-shadow
+    &__text
+      font-family: "Play",sans-serif
+      font-weight: 400
+      line-height: 1.2em
+      color: #fff
+      @extend %text-shadow
+
+  // ----------
+  // Calculator
+  // ----------
+  .calc-container
+    background-color: #fff
+    padding: 20px
+    border-radius: 8px
+
+  .calc-form
+    font-family: "Play"
+    
+  .calc-header
+    &__title
+      @extend %title
+      color: #2b2b2b
+
+  .calc-form-radiocontainer-wrap
+    @extend %flex-row
+    justify-content: space-between
+    align-items: baseline
+    
+  .calc-square-wrap
+    @extend %flex-row
+
+  .calc__btn
+    font-family: OpenSans,sans-serif
+    font-size: 18px
+    font-weight: 500
+    color: #fff
+    background-color: #ff2d2d
+    padding: 12px 50px
+    border: none
+    border-radius: 3px
+    cursor: pointer
+    margin: 0 auto
+    display: block
 
 // ---------------------------------------
 // Adaptivity
@@ -49,4 +125,47 @@
     &__subtitle
       padding-top: 20px
       font-size: 24px
-      
+
+  // ----------
+  // Benefits
+  // ----------
+  .head-content-benefit-box::before
+    font-size: 30px
+
+  .benefit
+    &__name
+      font-size: 24px
+      padding-top: 10px
+    &__text
+      font-size: 18px
+      padding-top: 5px
+
+  // ----------
+  // Calculator
+  // ----------
+  .calc-header__title
+    font-size: 20px
+
+  .renovation-type__title,
+  .building-type__title,
+  .calc-square__title,
+  .materials__title
+    font-size: 24px
+    margin: 15px 0
+
+  .renovation-type-box,
+  .building-type-box,
+  .materials__checkbox
+    padding: 5px
+
+  .calc-input__text
+    font-size: 18px
+
+  .calc-square__num
+    width: 40px
+
+  .calc-square__range
+    margin-left: 15px
+
+  .calc-btn-container
+    margin-top: 20px

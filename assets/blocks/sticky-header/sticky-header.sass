@@ -21,7 +21,12 @@
     cursor: pointer
     text-transform: uppercase
     user-select: none
-
+    transition: all .4s
+    text-shadow: 1px 1px 1px transparent
+    &:hover
+      color: #ffee00
+      @extend %text-shadow
+    
 // ----------
 // Call
 // ----------
