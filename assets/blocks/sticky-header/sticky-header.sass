@@ -1,7 +1,66 @@
+// ----------
+// Header
+// ----------
 .sticky-header
-  display: flex
-  flex-direction: row
-  justify-content: space-between
-  &-list
-    display: flex
-    flex
+  position: fixed
+  width: 100%
+  top: 0
+  left: 0
+  @extend %flex-row
+  justify-content: space-evenly
+  background-color: #fff
+
+// ----------  
+// Navigation
+// ----------
+.sticky-header-nav
+  &__list
+    @extend %flex-row
+  &__item
+    @extend %font-play-bold
+    cursor: pointer
+    text-transform: uppercase
+    user-select: none
+
+// ----------
+// Call
+// ----------
+.call
+  @extend %flex-row
+  @extend %font-play-bold
+  cursor: pointer
+  user-select: none
+  &::after
+    content: '\f2a0'
+    font-family: FontAwesome
+    margin-left: 10px
+
+// ---------------------------------------
+// Adaptivity
+// ---------------------------------------
+// Screen resolution from 1600px to 1920px
+// ---------------------------------------
+@media (max-width: 1600px) and (min-width: 1199.98px)
+  // ----------
+  // Header
+  // ----------
+  .sticky-header
+    padding: 20px 0
+  // ----------
+  // Navigation
+  // ----------
+  .sticky-header-nav
+    &__item
+      padding: 10px 20px
+    &__link
+      font-size: 24px
+
+  // ----------
+  // Call
+  // ----------
+  .call
+    font-size: 20px
+    &-phone
+      margin-bottom: 5px
+    &::after
+      font-size: 42px

@@ -1,0 +1,52 @@
+.head
+  background: url(../images/dest/background-1.jpg) center no-repeat
+  background-size: cover
+  position: relative
+  height: 800px
+  z-index: -5
+  &::after
+    display: block
+    content: ''
+    position: absolute
+    background-color: #00000071
+    top: 0
+    left: 0
+    height: 800px
+    width: 100%
+    z-index: -4
+  &-title-wrap
+    margin: 0 auto
+  &__title
+    @extend %title
+    @extend %text-shadow
+    color: #fff
+  &__subtitle
+    @extend %subtitle
+    @extend %text-shadow
+    color: #fff
+
+  .head-content-wrap
+    @extend %flex-row
+
+  .head-content-benefits-container
+    display: grid
+    grid-template-rows: 1fr 1fr
+    grid-template-columns: 1fr 1fr
+
+// ---------------------------------------
+// Adaptivity
+// ---------------------------------------
+// Screen resolution from 1600px to 1920px
+// ---------------------------------------
+@media (max-width: 1600px) and (min-width: 1199.98px)
+  .head
+    margin-top: 100px
+    &-title-wrap
+      width: 80%
+    &__title
+      padding-top: 80px
+      font-size: 48px
+    &__subtitle
+      padding-top: 20px
+      font-size: 24px
+      
