@@ -47,17 +47,17 @@ section.head
                     span.calc-input__text Вторичное жильё
               .calc-square
                 fieldset.calc-square-wrap 
-                  legend.calc-square__title Вам нужны материалы?
+                  legend.calc-square__title Укажите площадь квартиры: 
                   input.calc-square__num(type="text" value="10")
                   input.calc-square__range(type="range" name="square" id="square" min='10' max='250' step="10")
               .calc-materials 
                 fieldset.materials 
                   legend.materials__title Вам нужны материалы?
-                  p.materials__checkbox
-                    input(type="checkbox")
+                  p.materials-checkbox
+                    input.materials-checkbox__input(type="checkbox")
                     span.calc-input__text Нужны черновые
-                  p.materials__checkbox
-                    input(type="checkbox")
+                  p.materials-checkbox
+                    input.materials-checkbox__input(type="checkbox")
                     span.calc-input__text Нужны чистовые
               .calc-btn-container
                 button.calc__btn(type="submit") Рассчитать

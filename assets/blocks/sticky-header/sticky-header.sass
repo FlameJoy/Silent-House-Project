@@ -7,7 +7,6 @@
   top: 0
   left: 0
   @extend %flex-row
-  justify-content: space-evenly
   background-color: #fff
 
 // ----------  
@@ -24,7 +23,7 @@
     transition: all .4s
     text-shadow: 1px 1px 1px transparent
     &:hover
-      color: #ffee00
+      color: $color-yellow
       @extend %text-shadow
     
 // ----------
@@ -40,18 +39,54 @@
     font-family: FontAwesome
     margin-left: 10px
 
+.call:hover 
+  .call-phone,
+  .call-text,
+  &::after
+    color: $color-yellow
+    @extend %text-shadow
+
 // ---------------------------------------
 // Adaptivity
 // ---------------------------------------
+// Screen resolution from 1920px and more
+// ---------------------------------------
+@media (min-width: 1920px)
+  // ----------
+  // Header
+  // ----------
+  .sticky-header
+    padding: 40px 0
+    justify-content: space-evenly
+  // ----------
+  // Navigation
+  // ----------
+  .sticky-header-nav
+    &__item
+      padding: 10px 20px
+    &__link
+      font-size: 28px
+
+  // ----------
+  // Call
+  // ----------
+  .call
+    font-size: 28px
+    &-phone
+      margin-bottom: 5px
+    &::after
+      font-size: 48px
+
+// ---------------------------------------
 // Screen resolution from 1600px to 1920px
 // ---------------------------------------
-// @media (max-width: 1600px) and (min-width: 1199.98px)
-@media (max-width: 1920px) and (min-width: 900px)
+@media (min-width: 1600px) and (max-width: 1919.98px)
   // ----------
   // Header
   // ----------
   .sticky-header
     padding: 20px 0
+    justify-content: space-evenly
   // ----------
   // Navigation
   // ----------
@@ -70,3 +105,127 @@
       margin-bottom: 5px
     &::after
       font-size: 42px
+
+// ---------------------------------------
+// Screen resolution from 1200px to 1600px
+// ---------------------------------------
+@media (min-width: 1200px) and (max-width: 1599.98px)
+  // ----------
+  // Header
+  // ----------
+  .sticky-header
+    padding: 20px 0
+    justify-content: space-evenly
+  // ----------
+  // Navigation
+  // ----------
+  .sticky-header-nav
+    &__item
+      padding: 10px 20px
+    &__link
+      font-size: 20px
+
+  // ----------
+  // Call
+  // ----------
+  .call
+    font-size: 18px
+    &-phone
+      margin-bottom: 5px
+    &::after
+      font-size: 38px
+
+// ---------------------------------------
+// Screen resolution from 900px to 1200px
+// ---------------------------------------
+@media (min-width: 900px) and (max-width: 1199.98px)
+  // ----------
+  // Header
+  // ----------
+  .sticky-header
+    padding: 20px 0
+    justify-content: space-evenly
+  // ----------
+  // Navigation
+  // ----------
+  .sticky-header-nav
+    &__item
+      padding: 10px
+    &__link
+      font-size: 16px
+
+  // ----------
+  // Call
+  // ----------
+  .call
+    font-size: 16px
+    &-phone
+      margin-bottom: 5px
+    &::after
+      font-size: 32px
+
+// ---------------------------------------
+// Screen resolution from 600px to 900px
+// ---------------------------------------
+@media (min-width: 600px) and (max-width: 899.98px)
+  // ----------
+  // Header
+  // ----------
+  .sticky-header
+    padding: 20px 0
+    justify-content: space-between
+  // ----------
+  // Navigation
+  // ----------
+  .sticky-header-nav
+    display: none
+
+  // ----------
+  // Call
+  // ----------
+  .call
+    font-size: 16px
+    margin-right: 25px
+    &-phone
+      margin-bottom: 5px
+    &::after
+      font-size: 32px
+
+  // Logo
+  .logo-container
+    margin-left: 25px
+
+// ---------------------------------------
+// Screen resolution from 320px to 600px
+// ---------------------------------------
+@media (min-width: 320px) and (max-width: 599.98px)
+  // ----------
+  // Header
+  // ----------
+  .sticky-header
+    padding: 20px 0
+    justify-content: space-between
+  // ----------
+  // Navigation
+  // ----------
+  .sticky-header-nav
+    display: none
+
+  // ----------
+  // Call
+  // ----------
+  .call
+    font-size: 14px
+    margin-right: 15px
+    &-phone
+      margin-bottom: 5px
+    &::after
+      font-size: 24px
+
+  // Logo
+  .logo-container
+    margin-left: 15px
+
+  .logo-img
+    width: 80px
+    height: auto
