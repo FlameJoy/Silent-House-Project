@@ -1,9 +1,15 @@
 header
   .container
     .sticky-header
+      // --------------
+      // Logo
+      // --------------
       .logo-container 
         img.logo-img(src="assets/images/dest/silent-home-logo.png" alt="logo-img")
         span.logo-description
+      // --------------
+      // Navigation
+      // --------------
       nav.sticky-header-nav 
         ul.sticky-header-nav__list
           li.sticky-header-nav__item 
@@ -12,6 +18,9 @@ header
             a.sticky-header-nav__link Калькулятор
           li.sticky-header-nav__item 
             a.sticky-header-nav__link Отзывы клиентов
+      // --------------
+      // Call btn
+      // --------------
       .call(onclick="")
         .call-wrap
           .call-phone +7 (***) ***-**-**

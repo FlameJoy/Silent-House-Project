@@ -5,3 +5,109 @@
 .container
   width: 80%
   margin: 0 auto
+// ---------------------------------------
+// Button
+// ---------------------------------------
+.btn
+  font-family: OpenSans,sans-serif
+  font-weight: 500
+  color: #fff
+  background-color: #ff2d2d
+  padding: 12px 50px
+  border: none
+  border-radius: 3px
+  cursor: pointer
+  margin: 0 auto
+  display: block
+
+// ---------------------------------------
+// Titles & subtitles styles
+// ---------------------------------------
+h2[class$="__title"],
+h3[class$="__subtitle"]
+  font-family: "Montserrat", sans-serif
+  font-weight: 700
+  line-height: 1.4em
+  text-transform: uppercase
+  text-align: center
+  color: $color-darkgrey
+
+// ---------------------------------------
+// Adaptivity
+// ---------------------------------------
+// Screen resolution from 1920px and more
+// ---------------------------------------
+@media (min-width: 1920px)
+  h2[class$="__title"]
+    font-size: 38px
+    margin-top: 80px
+
+  h3[class$="__subtitle"]
+    font-size: 32px
+    margin-top: 15px
+    padding-bottom: 80px
+
+// ---------------------------------------
+// Screen resolution from 1600px to 1920px
+// ---------------------------------------
+@media (min-width: 1600px) and (max-width: 1919.98px)
+  h2[class$="__title"]
+    font-size: 32px
+    margin-top: 60px
+
+  h3[class$="__subtitle"]
+    font-size: 24px
+    padding-top: 10px
+    padding-bottom: 60px
+
+// ---------------------------------------
+// Screen resolution from 1200px to 1600px
+// ---------------------------------------
+@media (min-width: 1200px) and (max-width: 1599.98px)
+  h2[class$="__title"]
+    font-size: 30px
+    margin-top: 60px
+
+  h3[class$="__subtitle"]
+    font-size: 20px
+    padding-top: 10px
+    padding-bottom: 60px
+
+// ---------------------------------------
+// Screen resolution from 900px to 1200px
+// ---------------------------------------
+@media (min-width: 900px) and (max-width: 1199.98px)
+  h2[class$="__title"]
+    font-size: 24px
+    margin-top: 60px
+
+  h3[class$="__subtitle"]
+    font-size: 18px
+    padding-top: 10px
+    padding-bottom: 40px
+
+// ---------------------------------------
+// Screen resolution from 600px to 900px
+// ---------------------------------------
+@media (min-width: 600px) and (max-width: 899.98px)
+  h2[class$="__title"]
+    font-size: 22px
+    margin-top: 60px
+
+  h3[class$="__subtitle"]
+    font-size: 16px
+    padding-top: 10px
+    padding-bottom: 40px
+
+// ---------------------------------------
+// Screen resolution from 320px to 600px
+// ---------------------------------------
+@media (min-width: 320px) and (max-width: 599.98px)
+  h2[class$="__title"]
+    font-size: 18px
+    margin-top: 60px
+
+  h3[class$="__subtitle"]
+    font-size: 14px
+    padding-top: 10px
+    padding-bottom: 40px

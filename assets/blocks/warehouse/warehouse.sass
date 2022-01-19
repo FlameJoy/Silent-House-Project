@@ -1,0 +1,35 @@
+.warehouse-benefits-container,
+.warehouse-slider-container
+  width: 49%
+
+.warehouse-content-wrap
+  display: flex
+  flex-direction: row
+  column-gap: 2%
+  
+.warehouse-benefit
+  &__name
+    @extend %font-play-bold
+  &__text
+    @extend %font-play-normal
+    line-height: 1.2em
+  &__btn
+    margin: 0
+
+// ---------------------------------------
+// Adaptivity
+// ---------------------------------------
+// Screen resolution from 1920px and more
+// ---------------------------------------
+@media (min-width: 1920px)
+  .warehouse-benefit
+    margin-top: 15px
+    &__name
+      font-size: 32px
+      padding: 15px 0
+    &__text
+      font-size: 24px
+    &__btn
+      font-size: 30px
+      margin-top: 40px
+  

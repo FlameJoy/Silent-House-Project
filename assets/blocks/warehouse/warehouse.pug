@@ -1,0 +1,54 @@
+section.warehouse
+  .container 
+    .warehouse-container 
+      // --------------
+      // Header
+      // --------------
+      .warehouse-header
+        h2.warehouse-header__title Собственный склад с материалами в Москве 
+        h3.warehouse-header__subtitle Поможем с выбором и доставкой до квартиры! 
+      .warehouse-content-wrap 
+        // --------------
+        // Benefits
+        // --------------
+        .warehouse-benefits-container 
+          .warehouse-benefit
+            h4.warehouse-benefit__name Доставка и выкуп материалов
+            p.warehouse-benefit__text На объект завозим все материалы с запасом в 5%. Оставшиеся материалы выкупаем и увозим на склад. 
+          .warehouse-benefit
+            h4.warehouse-benefit__name Привозим на объект за 1 день 
+            p.warehouse-benefit__text Своя служба доставки позволяет быстро доставить материалы в квартиру и начать ремонт без задержок. 
+          .warehouse-benefit
+            h4.warehouse-benefit__name Собственный автопарк 
+            p.warehouse-benefit__text В собственности компании - собственный автопарк, что позволяет быстро доставлять материалы. 
+          .warehouse-benefit
+            button.btn.warehouse-benefit__btn Рассчитать стоимость с нашими материалами 
+        // --------------
+        // Slider
+        // --------------
+        .warehouse-slider-container
+          .slider-container
+            .slide
+              img.slide__img(src="/assets/images/dest/slide-1.jpg" alt="slide-img-1")
+            .slide
+              img.slide__img(src="/assets/images/dest/slide-2.jpg" alt="slide-img-2")
+            .slide
+              img.slide__img(src="/assets/images/dest/slide-3.jpeg" alt="slide-img-3")
+            .slide
+              img.slide__img(src="/assets/images/dest/slide-4.jpg" alt="slide-img-4")
+            .slide
+              img.slide__img(src="/assets/images/dest/slide-5.jpg" alt="slide-img-4")
+            // --------------
+            // Next / Prev btn
+            // --------------
+            a.next-btn(onclick="plusSlide(1)") &#10095;
+            a.prev-btn(onclick="plusSlide(-1)") &#10094;
+          // --------------
+          // Slider dots
+          // --------------
+          .slider-dots 
+            span.slider-dot(onclick="currentSlide(1)")
+            span.slider-dot(onclick="currentSlide(2)")
+            span.slider-dot(onclick="currentSlide(3)")
+            span.slider-dot(onclick="currentSlide(4)")
+            span.slider-dot(onclick="currentSlide(5)")
