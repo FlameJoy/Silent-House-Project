@@ -28,27 +28,27 @@ section.warehouse
         // --------------
         .warehouse-slider-container
           .slider-container
-            .slide
+            .slide1
               img.slide__img(src="/assets/images/dest/slide-1.jpg" alt="slide-img-1")
-            .slide
+            .slide1
               img.slide__img(src="/assets/images/dest/slide-2.jpg" alt="slide-img-2")
-            .slide
+            .slide1
               img.slide__img(src="/assets/images/dest/slide-3.jpeg" alt="slide-img-3")
-            .slide
+            .slide1
               img.slide__img(src="/assets/images/dest/slide-4.jpg" alt="slide-img-4")
-            .slide
+            .slide1
               img.slide__img(src="/assets/images/dest/slide-5.jpg" alt="slide-img-4")
             // --------------
             // Next / Prev btn
             // --------------
-            a.next-btn(onclick="plusSlide(1)") &#10095;
-            a.prev-btn(onclick="plusSlide(-1)") &#10094;
+            a.next-btn(onclick="plusSlide(1, 0)") &#10095;
+            a.prev-btn(onclick="plusSlide(-1, 0)") &#10094;
           // --------------
           // Slider dots
           // --------------
           .slider-dots 
-            span.slider-dot(onclick="currentSlide(1)")
-            span.slider-dot(onclick="currentSlide(2)")
-            span.slider-dot(onclick="currentSlide(3)")
-            span.slider-dot(onclick="currentSlide(4)")
-            span.slider-dot(onclick="currentSlide(5)")
+            span.slider-dot1(onclick="currentSlide(1, 0)")
+            span.slider-dot1(onclick="currentSlide(2, 0)")
+            span.slider-dot1(onclick="currentSlide(3, 0)")
+            span.slider-dot1(onclick="currentSlide(4, 0)")
+            span.slider-dot1(onclick="currentSlide(5, 0)")

@@ -1,0 +1,54 @@
+section.soundproofing
+  .container 
+    .warehouse-container 
+      // --------------
+      // Header
+      // --------------
+      .warehouse-header
+        h2.warehouse-header__title Устанавливаем лучшую звукоизоляцию! 
+        h3.warehouse-header__subtitle Поможем с избавиться от посторонних внешних звуков и вибраций
+      .warehouse-content-wrap 
+        // --------------
+        // Benefits
+        // --------------
+        .warehouse-benefits-container 
+          .warehouse-benefit
+            h4.warehouse-benefit__name Огромный опыт
+            p.warehouse-benefit__text С 2017 года звукоизолировано 480 квартир. Подберем и установим самую эффективную систему
+          .warehouse-benefit
+            h4.warehouse-benefit__name Используем только лучшее
+            p.warehouse-benefit__text Работаем только с сертифицированными материалами, прошедшими все испытания
+          .warehouse-benefit
+            h4.warehouse-benefit__name «Под ключ»
+            p.warehouse-benefit__text Все услуги в "Одном окне" - собственное сертифицированное производство, проектирование, доставка, монтаж
+          .warehouse-benefit
+            button.btn.warehouse-benefit__btn Рассчитать стоимость с нашими материалами 
+        // --------------
+        // Slider
+        // --------------
+        .warehouse-slider-container
+          .slider-container
+            .slide2
+              img.slide__img(src="/assets/images/dest/soundproofing-1.jpg" alt="slide-img-1")
+            .slide2
+              img.slide__img(src="/assets/images/dest/soundproofing-6.jpg" alt="slide-img-2")
+            .slide2
+              img.slide__img(src="/assets/images/dest/soundproofing-3.jpg" alt="slide-img-3")
+            .slide2
+              img.slide__img(src="/assets/images/dest/soundproofing-2.jpeg" alt="slide-img-4")
+            .slide2
+              img.slide__img(src="/assets/images/dest/soundproofing-5.jpg" alt="slide-img-4")
+            // --------------
+            // Next / Prev btn
+            // --------------
+            a.next-btn(onclick="plusSlide(1, 1)") &#10095;
+            a.prev-btn(onclick="plusSlide(-1, 1)") &#10094;
+          // --------------
+          // Slider dots
+          // --------------
+          .slider-dots 
+            span.slider-dot2(onclick="currentSlide(1, 1)")
+            span.slider-dot2(onclick="currentSlide(2, 1)")
+            span.slider-dot2(onclick="currentSlide(3, 1)")
+            span.slider-dot2(onclick="currentSlide(4, 1)")
+            span.slider-dot2(onclick="currentSlide(5, 1)")
