@@ -11,13 +11,9 @@
 .prev-btn, .next-btn
   cursor: pointer
   position: absolute
-  top: 47%
   width: auto
-  margin-top: -22px
-  padding: 16px
   color: $color-yellow
   font-weight: bold
-  font-size: 30px
   transition: 0.6s ease
   border-radius: 0 3px 3px 0
   user-select: none
@@ -31,7 +27,6 @@
 
 .slide__img
   width: 100%
-  height: 500px
   border-radius: 3px
 
 .text 
@@ -52,14 +47,10 @@
 
 .slider-dots
   text-align: center
-  margin: 6px 0
 
 .slider-dot1,
 .slider-dot2
   cursor: pointer
-  height: 15px
-  width: 15px
-  margin: 0 4px
   background-color: #bbb
   border-radius: 50%
   display: inline-block
@@ -86,3 +77,137 @@
     opacity: .4
   to 
     opacity: 1
+
+// ---------------------------------------
+// Adaptivity
+// ---------------------------------------
+// Screen resolution from 1920px and more
+// ---------------------------------------
+@media (min-width: 1920px)
+  .prev-btn, .next-btn
+    top: 47%
+    margin-top: -22px
+    padding: 16px
+    font-size: 30px
+
+  .slide__img
+    height: 500px
+
+  .slider-dots
+    margin: 6px 0
+
+  .slider-dot1,
+  .slider-dot2
+    height: 15px
+    width: 15px
+    margin: 0 4px
+
+// ---------------------------------------
+// Screen resolution from 1600px to 1920px
+// ---------------------------------------
+@media (min-width: 1600px) and (max-width: 1919.98px)
+  .prev-btn, .next-btn
+    top: 49%
+    margin-top: -22px
+    padding: 16px
+    font-size: 30px
+
+  .slide__img
+    height: 430px
+
+  .slider-dots
+    margin: 6px 0
+
+  .slider-dot1,
+  .slider-dot2
+    height: 15px
+    width: 15px
+    margin: 0 4px
+
+// ---------------------------------------
+// Screen resolution from 1200px to 1600px
+// ---------------------------------------
+@media (min-width: 1200px) and (max-width: 1599.98px)
+  .prev-btn, .next-btn
+    top: 49%
+    margin-top: -22px
+    padding: 16px
+    font-size: 30px
+
+  .slide__img
+    height: 380px
+
+  .slider-dots
+    margin: 6px 0
+
+  .slider-dot1,
+  .slider-dot2
+    height: 10px
+    width: 10px
+    margin: 0 4px
+
+// ---------------------------------------
+// Screen resolution from 900px to 1200px
+// ---------------------------------------
+@media (min-width: 900px) and (max-width: 1199.98px)
+  .prev-btn, .next-btn
+    top: 49%
+    margin-top: -22px
+    padding: 16px
+    font-size: 30px
+
+  .slide__img
+    height: 380px
+
+  .slider-dots
+    margin: 6px 0
+
+  .slider-dot1,
+  .slider-dot2
+    height: 10px
+    width: 10px
+    margin: 0 4px
+
+// ---------------------------------------
+// Screen resolution from 600px to 900px
+// ---------------------------------------
+@media (min-width: 600px) and (max-width: 899.98px)
+  .prev-btn, .next-btn
+    top: 49%
+    margin-top: -22px
+    padding: 16px
+    font-size: 30px
+
+  .slide__img
+    height: 380px
+
+  .slider-dots
+    margin: 6px 0
+
+  .slider-dot1,
+  .slider-dot2
+    height: 10px
+    width: 10px
+    margin: 0 4px
+
+// ---------------------------------------
+// Screen resolution from 320px to 600px
+// ---------------------------------------
+@media (min-width: 320px) and (max-width: 599.98px)
+  .prev-btn, .next-btn
+    top: 49%
+    margin-top: -22px
+    padding: 16px
+    font-size: 30px
+
+  .slide__img
+    height: 250px
+
+  .slider-dots
+    margin: 6px 0
+
+  .slider-dot1,
+  .slider-dot2
+    height: 10px
+    width: 10px
+    margin: 0 4px
