@@ -1,0 +1,326 @@
+.pricelist-newBuilding-container,
+.pricelist-resaleBuilding-container
+  @extend %flex-row
+  align-items: baseline
+  justify-content: space-evenly
+  gap: 2%
+
+.pricelist-resaleBuilding-container
+  display: none
+  
+.pricelist-box
+  position: relative
+  border: 1px solid #bdbdbd
+  border-radius: 6px
+  width: 32%
+  &__name
+    @extend %font-play-bold
+    position: absolute
+    background-color: $color-yellow
+    text-transform: uppercase
+    top: 0
+    border-radius: 6px 0 6px 0
+  &__img
+    border-radius: 6px 6px 0 0
+    width: 100%
+  &__list
+    list-style: disc
+    @extend %font-play-normal
+  &__item
+    color: $color-darkgrey
+  &-price
+    text-align: center
+    @extend %font-play-bold
+
+.pricelist-box-btn
+  @extend %font-play-bold
+  font-weight: 700
+
+.empty
+  visibility: hidden
+
+// --------------
+// Switch button
+// --------------
+.pricelist-header-switch-container
+  @extend %flex-row
+  justify-content: center
+
+.pricelist-header-switch
+  position: relative
+  display: inline-block
+  width: 60px
+  height: 34px
+  &__option
+    @extend %font-play-bold
+    text-transform: uppercase
+
+/* Hide default HTML checkbox */
+.pricelist-switch-input
+  opacity: 0
+  width: 60px
+  height: 34px
+  margin: 0
+  z-index: 10
+  position: relative
+
+/* The slider */
+.pricelist-slider
+  position: absolute
+  cursor: pointer
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: #ccc
+  transition: .4s
+
+.pricelist-slider:before 
+  position: absolute
+  content: ""
+  height: 26px
+  width: 26px
+  left: 4px
+  bottom: 4px
+  background-color: white
+  transition: .4s
+
+.pricelist-switch-input:checked + .pricelist-slider 
+  background-color: $color-red
+
+.pricelist-switch-input:focus + .pricelist-slider
+  box-shadow: 0 0 1px $color-red
+
+.pricelist-switch-input:checked + .pricelist-slider:before
+  transform: translateX(26px)
+
+// ---------------------------------------
+// Adaptivity
+// ---------------------------------------
+// Screen resolution from 1920px and more
+// ---------------------------------------
+@media (min-width: 1920px)
+  .pricelist-header-switch-container
+    margin-bottom: 30px
+
+  .pricelist-header-switch__option
+    margin: 0 20px
+    font-size: 28px
+
+  .leftoption
+    margin-left: -3%
+
+  .pricelist-box
+    &__name
+      padding: 6px 12px
+      font-size: 28px
+    &__list
+      padding: 15px 25px
+      font-size: 24px
+    &__item
+      margin-left: 15px
+      padding: 3px 0
+      font-size: 22px
+    &-price
+      padding: 15px 25px
+      font-size: 32px
+
+  .pricelist-box__item:nth-child(1)
+    margin-top: 10px
+
+  .pricelist-box-btn
+    margin: 20px auto
+    font-size: 24px
+
+// ---------------------------------------
+// Screen resolution from 1600px to 1920px
+// ---------------------------------------
+@media (min-width: 1600px) and (max-width: 1919.98px)
+  .pricelist-header-switch-container
+    margin-bottom: 30px
+
+  .pricelist-header-switch__option
+    margin: 0 20px
+    font-size: 24px
+
+  .leftoption
+    margin-left: -3%
+
+  .pricelist-box
+    &__name
+      padding: 6px 12px
+      font-size: 18px
+    &__list
+      padding: 15px 25px
+      font-size: 20px
+    &__item
+      margin-left: 15px
+      padding: 3px 0
+      font-size: 18px
+    &-price
+      padding: 15px 25px
+      font-size: 32px
+
+  .pricelist-box__item:nth-child(1)
+    margin-top: 10px
+
+  .pricelist-box-btn
+    margin: 20px auto
+    font-size: 24px
+
+// ---------------------------------------
+// Screen resolution from 1200px to 1600px
+// ---------------------------------------
+@media (min-width: 1200px) and (max-width: 1599.98px)
+  .pricelist-header-switch-container
+    margin-bottom: 30px
+
+  .pricelist-header-switch__option
+    margin: 0 20px
+    font-size: 24px
+
+  .leftoption
+    margin-left: -3%
+
+  .pricelist-box
+    &__name
+      padding: 6px 12px
+      font-size: 18px
+    &__list
+      padding: 15px 25px
+      font-size: 20px
+    &__item
+      margin-left: 15px
+      padding: 3px 0
+      font-size: 18px
+    &-price
+      padding: 15px 25px
+      font-size: 32px
+
+  .pricelist-box__item:nth-child(1)
+    margin-top: 10px
+
+  .pricelist-box-btn
+    margin: 20px auto
+    font-size: 24px
+   
+
+// ---------------------------------------
+// Screen resolution from 900px to 1200px
+// ---------------------------------------
+@media (min-width: 900px) and (max-width: 1199.98px)
+  .pricelist-header-switch-container
+    margin-bottom: 30px
+
+  .pricelist-header-switch__option
+    margin: 0 20px
+    font-size: 24px
+
+  .leftoption
+    margin-left: -3%
+
+  .pricelist-box
+    &__name
+      padding: 6px 12px
+      font-size: 18px
+    &__list
+      padding: 15px 25px
+      font-size: 20px
+    &__item
+      margin-left: 15px
+      padding: 3px 0
+      font-size: 18px
+    &-price
+      padding: 15px 25px
+      font-size: 24px
+
+  .pricelist-box__item:nth-child(1)
+    margin-top: 10px
+
+  .pricelist-box-btn
+    margin: 20px auto
+    font-size: 20px
+
+// ---------------------------------------
+// Screen resolution from 600px to 900px
+// ---------------------------------------
+@media (min-width: 600px) and (max-width: 899.98px)
+  .pricelist-newBuilding-container,
+  .pricelist-resaleBuilding-container  
+    flex-direction: column
+
+  .pricelist-header-switch-container
+    margin-bottom: 30px
+
+  .pricelist-header-switch__option
+    margin: 0 20px
+    font-size: 24px
+
+  .leftoption
+    margin-left: -3%
+
+  .pricelist-box
+    width: 100%
+    margin-bottom: 20px
+    &__name
+      padding: 6px 12px
+      font-size: 28px
+    &__list
+      padding: 15px 25px
+      font-size: 24px
+    &__item
+      margin-left: 15px
+      padding: 3px 0
+      font-size: 22px
+    &-price
+      padding: 15px 25px
+      font-size: 32px
+
+  .pricelist-box__item:nth-child(1)
+    margin-top: 10px
+
+  .pricelist-box-btn
+    margin: 20px auto
+    font-size: 32px
+
+// ---------------------------------------
+// Screen resolution from 320px to 600px
+// ---------------------------------------
+@media (min-width: 320px) and (max-width: 599.98px)
+  .pricelist-newBuilding-container,
+  .pricelist-resaleBuilding-container
+    flex-direction: column
+
+  .pricelist-header-switch-container
+    margin-bottom: 30px
+
+  .pricelist-header-switch__option
+    margin: 0 20px
+    font-size: 14px
+
+  .leftoption
+    margin-left: 0
+
+  .pricelist-box
+    width: 100%
+    margin-bottom: 20px
+    &__name
+      padding: 6px 12px
+      font-size: 16px
+    &__list
+      padding: 15px 25px
+      font-size: 18px
+    &__item
+      margin-left: 15px
+      padding: 3px 0
+      font-size: 16px
+    &-price
+      padding: 15px 25px
+      font-size: 24px
+
+  .pricelist-box__item:nth-child(1)
+    margin-top: 10px
+
+  .pricelist-box-btn
+    margin: 20px auto
+    font-size: 24px

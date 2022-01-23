@@ -1,4 +1,20 @@
 "use strict"
+// --------------
+// Pricelist button
+// --------------
+let toggler = document.getElementById('toggler');
+let newBuilding = document.getElementById('newBuilding');
+let resaleBuilding = document.getElementById('resaleBuilding');
+
+function switchToggler() {
+	if(toggler.checked == true) {
+		newBuilding.style.display = "none";
+		resaleBuilding.style.display = "flex";
+	} else if(toggler.checked == false) {
+		newBuilding.style.display = "flex";
+		resaleBuilding.style.display = "none";
+	}
+}
 
 // --------------
 // Slider

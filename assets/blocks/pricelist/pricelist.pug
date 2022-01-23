@@ -1,0 +1,139 @@
+section.pricelist
+  .container 
+    .pricelist-container 
+      .pricelist-header
+        h2.pricelist-header__title Цены на ремонт в 2022 году 
+        h3.pricelist-header__subtitle 
+        .pricelist-header-switch-container
+          p.pricelist-header-switch__option.leftoption Новостройка
+          .pricelist-header-switch
+            input#toggler.pricelist-switch-input(type="checkbox" onclick="switchToggler()")
+            span.pricelist-slider
+          p.pricelist-header-switch__option Вторичка
+      .pricelist-content-container 
+        // ------------------------
+        // newBuilding-container 
+        // ------------------------
+        #newBuilding.pricelist-newBuilding-container 
+          .pricelist-box
+            img.pricelist-box__img(src="assets/images/dest/pricelist-img-1.jpg" alt="pricelist-img-1")
+            h4.pricelist-box__name Черновой ремонт
+            ul.pricelist-box__list СПИСОК РАБОТ:
+              li.pricelist-box__item Монтаж плинтусов
+              li.pricelist-box__item Шпатлевка стен
+              li.pricelist-box__item Выравнивание пола
+              li.pricelist-box__item Поклейка обоев
+              li.pricelist-box__item Укладка ламината и плитки
+              li.pricelist-box__item Окраска потолков
+              li.pricelist-box__item Облицовка плиткой пола
+              li.pricelist-box__item Облицовка ванной пласт. панелями
+              li.pricelist-box__item Замена всех светильников
+              li.pricelist-box__item Вынос мусора и разгрузка материала
+              li.pricelist-box__item.empty
+              li.pricelist-box__item.empty
+              li.pricelist-box__item.empty
+            .pricelist-box-price от 3100 руб/м
+              span.suptext 2
+            button.pricelist-box-btn.btn Расчитать
+          .pricelist-box
+            img.pricelist-box__img(src="assets/images/dest/pricelist-img-2.jpeg" alt="pricelist-img-1")
+            h4.pricelist-box__name Чистовой ремонт 
+            ul.pricelist-box__list СПИСОК РАБОТ:
+              li.pricelist-box__item Монтаж плинтусов
+              li.pricelist-box__item Шпатлевка стен
+              li.pricelist-box__item Выравнивание пола
+              li.pricelist-box__item Поклейка обоев
+              li.pricelist-box__item Укладка ламината и плитки
+              li.pricelist-box__item Окраска потолков
+              li.pricelist-box__item Облицовка плиткой пола
+              li.pricelist-box__item Облицовка ванной пласт. панелями
+              li.pricelist-box__item Замена всех светильников
+              li.pricelist-box__item Вынос мусора и разгрузка материала
+              li.pricelist-box__item Грунтовка
+              li.pricelist-box__item Шпаклевка
+              li.pricelist-box__item Наливной пол
+            .pricelist-box-price от 2700 руб/м
+              span.suptext 2
+            button.pricelist-box-btn.btn Расчитать
+          .pricelist-box
+            img.pricelist-box__img(src="assets/images/dest/pricelist-img-3.jpg" alt="pricelist-img-1")
+            h4.pricelist-box__name Ремонт под ключ
+            ul.pricelist-box__list СПИСОК РАБОТ:
+              li.pricelist-box__item Дизайн-проект 
+              li.pricelist-box__item Штукатурка и шпаклевка 
+              li.pricelist-box__item Демонтажные работы 
+              li.pricelist-box__item Поклейка обоев, покраска стен 
+              li.pricelist-box__item Поклейка обоев 
+              li.pricelist-box__item Укладка ламината, настил линолеума 
+              li.pricelist-box__item Установка натяжных потолка/окраска
+              li.pricelist-box__item Замена электроэлементов 
+              li.pricelist-box__item Сборка электрощита и автоматов 
+              li.pricelist-box__item Укладка плитки на пол 
+              li.pricelist-box__item Установка стеновых панелей 
+              li.pricelist-box__item Разводка труб, сборка сантехшкафа 
+              li.pricelist-box__item Монтаж и замена сантехники 
+            .pricelist-box-price от 5500 руб/м
+              span.suptext 2
+            button.pricelist-box-btn.btn Расчитать
+        // ------------------------
+        // resaleBuilding-container
+        // ------------------------
+        #resaleBuilding.pricelist-resaleBuilding-container 
+          .pricelist-box
+            img.pricelist-box__img(src="assets/images/dest/pricelist-img-4.jpg" alt="pricelist-img-1")
+            h4.pricelist-box__name Косметический ремонт 
+            ul.pricelist-box__list СПИСОК РАБОТ:
+              li.pricelist-box__item Демонтажные работы
+              li.pricelist-box__item Шпаклевка 
+              li.pricelist-box__item Поклейка обоев 
+              li.pricelist-box__item Укладка ламината, настил линолеума 
+              li.pricelist-box__item Установка натяжных потолка
+              li.pricelist-box__item Замена электроэлементов 
+              li.pricelist-box__item Укладка плитки на пол 
+              li.pricelist-box__item Установка стеновых панелей 
+              li.pricelist-box__item Монтаж и замена сантехники
+              li.pricelist-box__item.empty
+              li.pricelist-box__item.empty
+              li.pricelist-box__item.empty
+            .pricelist-box-price от 2700 руб/м
+              span.suptext 2
+            button.pricelist-box-btn.btn Расчитать
+          .pricelist-box
+            img.pricelist-box__img(src="assets/images/dest/pricelist-img-5.jpg" alt="pricelist-img-1")
+            h4.pricelist-box__name Капитальный ремонт 
+            ul.pricelist-box__list СПИСОК РАБОТ:
+              li.pricelist-box__item Демонтажные работы 
+              li.pricelist-box__item Штукатурка и шпаклевка 
+              li.pricelist-box__item Покраска стен
+              li.pricelist-box__item Поклейка обоев
+              li.pricelist-box__item Укладка ламината и плитки
+              li.pricelist-box__item Установка натяжных потолка
+              li.pricelist-box__item Замена электроэлементов
+              li.pricelist-box__item Сборка электрощита и автоматов 
+              li.pricelist-box__item Укладка плитки на пол 
+              li.pricelist-box__item Установка стеновых панелей 
+              li.pricelist-box__item Разводка труб, сборка сантехшкафа 
+              li.pricelist-box__item Монтаж и замена сантехники 
+            .pricelist-box-price от 5500 руб/м
+              span.suptext 2
+            button.pricelist-box-btn.btn Расчитать
+          .pricelist-box
+            img.pricelist-box__img(src="assets/images/dest/pricelist-img-6.jpg" alt="pricelist-img-1")
+            h4.pricelist-box__name Дизайнерский ремонт
+            ul.pricelist-box__list СПИСОК РАБОТ:
+              li.pricelist-box__item Дизайн-проект  
+              li.pricelist-box__item Штукатурка и шпаклевка 
+              li.pricelist-box__item Демонтажные работы 
+              li.pricelist-box__item Покраска стен
+              li.pricelist-box__item Поклейка обоев
+              li.pricelist-box__item Укладка ламината и плитки
+              li.pricelist-box__item Установка натяжных потолка
+              li.pricelist-box__item Замена электроэлементов
+              li.pricelist-box__item Сборка электрощита и автоматов 
+              li.pricelist-box__item Укладка плитки на пол 
+              li.pricelist-box__item Установка стеновых панелей 
+              li.pricelist-box__item Разводка труб, сборка сантехшкафа 
+              li.pricelist-box__item Монтаж и замена сантехники 
+            .pricelist-box-price от 8500 руб/м
+              span.suptext 2
+            button.pricelist-box-btn.btn Расчитать
