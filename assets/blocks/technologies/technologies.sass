@@ -1,0 +1,344 @@
+@media screen and (min-width: 641px) and (max-width: 910px) 
+  .ant-carousel
+    max-width: 540px
+
+@media screen and (max-width: 640px) 
+  .ant-carousel 
+    max-width: 270px
+
+.ant-carousel
+  background-color: white
+
+.ant-carousel-element
+  text-align: center
+
+/* General styles */
+.ant-carousel
+  width: auto
+  position: relative
+
+.ant-carousel-hider 
+  overflow: hidden
+
+.ant-carousel-list
+  width: auto
+  margin: 0
+  padding: 0
+  list-style-type: none
+  display: flex
+  justify-content: flex-start
+
+.ant-carousel-element
+  display: block
+  flex: 0 0 auto
+
+.ant-carousel__name
+  @extend %font-play-bold
+
+.ant-carousel__text
+  @extend %font-play-normal
+  line-height: 1.2em
+
+/* Navigation item styles */
+.ant-carousel-arrow-left,
+.ant-carousel-arrow-right 
+  display: block
+  border-radius: 6px 
+  position: absolute
+  cursor: pointer
+  z-index: 32
+  color: $color-yellow
+  &:hover
+    background-color: rgba(0,0,0,0.8)
+
+.ant-carousel-dots 
+  width: 100%
+  height: auto
+  position: absolute
+  left: 0
+  bottom: -30px
+  z-index: 30
+  text-align: center
+
+.ant-dot 
+  padding: 0
+  display: inline-block
+  background-color: #BBB
+  border-radius: 50%
+  cursor: pointer
+
+// ---------------------------------------
+// Adaptivity
+// ---------------------------------------
+// Screen resolution from 1920px and more
+// ---------------------------------------
+@media (min-width: 1920px)
+  .ant-carousel
+    max-width: 1200px
+    margin: 50px auto auto
+    padding-top: 10px
+
+  .ant-carousel-element
+    width: 350px
+    height: 450px
+    margin: 0 25px
+
+  .ant-carousel-img
+    width: 100%
+    height: 200px
+    border-radius: 6px
+
+  .ant-carousel__name
+    font-size: 24px
+    padding: 15px
+  
+  .ant-carousel__text
+    font-size: 20px
+
+  // --------------
+  // Nav buttons
+  // --------------
+  .ant-carousel-arrow-left,
+  .ant-carousel-arrow-right
+    font-size: 30px
+    padding: 16px  
+    top: 40%
+
+  .ant-carousel-arrow-right
+    right: -50px
+
+  .ant-carousel-arrow-left
+    left: -50px
+
+  .ant-dot
+    width: 15px
+    height: 15px
+    margin: 5px 7px
+
+// ---------------------------------------
+// Screen resolution from 1600px to 1920px
+// ---------------------------------------
+@media (min-width: 1600px) and (max-width: 1919.98px)
+  .ant-carousel
+    max-width: 1200px
+    margin: 50px auto auto
+    padding-top: 10px
+
+  .ant-carousel-element
+    width: 350px
+    height: 450px
+    margin: 0 25px
+
+  .ant-carousel-img
+    width: 100%
+    height: 200px
+    border-radius: 6px
+
+  .ant-carousel__name
+    font-size: 24px
+    padding: 15px
+  
+  .ant-carousel__text
+    font-size: 20px
+
+  // --------------
+  // Nav buttons
+  // --------------
+  .ant-carousel-arrow-left,
+  .ant-carousel-arrow-right
+    font-size: 30px
+    padding: 16px  
+    top: 40%
+
+  .ant-carousel-arrow-right
+    right: -50px
+
+  .ant-carousel-arrow-left
+    left: -50px
+
+  .ant-dot
+    width: 15px
+    height: 15px
+    margin: 5px 7px
+
+// ---------------------------------------
+// Screen resolution from 1200px to 1600px
+// ---------------------------------------
+@media (min-width: 1200px) and (max-width: 1599.98px)
+  .ant-carousel
+    max-width: 900px
+    margin: 50px auto auto
+    padding-top: 10px
+
+  .ant-carousel-element
+    width: 280px
+    height: 450px
+    margin: 0 10px
+
+  .ant-carousel-img
+    width: 100%
+    height: 200px
+    border-radius: 6px
+
+  .ant-carousel__name
+    font-size: 20px
+    padding: 15px
+  
+  .ant-carousel__text
+    font-size: 18px
+
+  // --------------
+  // Nav buttons
+  // --------------
+  .ant-carousel-arrow-left,
+  .ant-carousel-arrow-right
+    font-size: 30px
+    padding: 16px  
+    top: 40%
+
+  .ant-carousel-arrow-right
+    right: -50px
+
+  .ant-carousel-arrow-left
+    left: -50px
+
+  .ant-dot
+    width: 15px
+    height: 15px
+    margin: 5px 7px
+
+// ---------------------------------------
+// Screen resolution from 900px to 1200px
+// ---------------------------------------
+@media (min-width: 900px) and (max-width: 1199.98px)
+  .ant-carousel
+    max-width: 600px
+    margin: 50px auto auto
+    padding-top: 10px
+
+  .ant-carousel-element
+    width: 280px
+    height: 450px
+    margin: 0 10px
+
+  .ant-carousel-img
+    width: 100%
+    height: 200px
+    border-radius: 6px
+
+  .ant-carousel__name
+    font-size: 20px
+    padding: 15px
+  
+  .ant-carousel__text
+    font-size: 18px
+
+  // --------------
+  // Nav buttons
+  // --------------
+  .ant-carousel-arrow-left,
+  .ant-carousel-arrow-right
+    font-size: 30px
+    padding: 16px  
+    top: 40%
+
+  .ant-carousel-arrow-right
+    right: -50px
+
+  .ant-carousel-arrow-left
+    left: -50px
+
+  .ant-dot
+    width: 15px
+    height: 15px
+    margin: 5px 7px
+
+// ---------------------------------------
+// Screen resolution from 600px to 900px
+// ---------------------------------------
+@media (min-width: 600px) and (max-width: 899.98px)
+  .ant-carousel
+    max-width: 300px
+    margin: 50px auto auto
+    padding-top: 10px
+
+  .ant-carousel-element
+    width: 280px
+    height: 450px
+    margin: 0 10px
+
+  .ant-carousel-img
+    width: 100%
+    height: 200px
+    border-radius: 6px
+
+  .ant-carousel__name
+    font-size: 20px
+    padding: 15px
+  
+  .ant-carousel__text
+    font-size: 18px
+
+  // --------------
+  // Nav buttons
+  // --------------
+  .ant-carousel-arrow-left,
+  .ant-carousel-arrow-right
+    font-size: 30px
+    padding: 16px  
+    top: 40%
+
+  .ant-carousel-arrow-right
+    right: -50px
+
+  .ant-carousel-arrow-left
+    left: -50px
+
+  .ant-dot
+    width: 15px
+    height: 15px
+    margin: 5px 7px
+
+// ---------------------------------------
+// Screen resolution from 320px to 600px
+// ---------------------------------------
+@media (min-width: 320px) and (max-width: 599.98px)
+  .ant-carousel
+    max-width: 300px
+    margin: 50px auto auto
+    padding-top: 10px
+
+  .ant-carousel-element
+    width: 250px
+    height: 450px
+    margin: 0 5px
+
+  .ant-carousel-img
+    width: 100%
+    height: 200px
+    border-radius: 6px
+
+  .ant-carousel__name
+    font-size: 20px
+    padding: 15px
+  
+  .ant-carousel__text
+    font-size: 18px
+
+  // --------------
+  // Nav buttons
+  // --------------
+  .ant-carousel-arrow-left,
+  .ant-carousel-arrow-right
+    display: none
+
+  .ant-carousel-arrow-right
+    right: -28px
+
+  .ant-carousel-arrow-left
+    left: -28px
+
+  .ant-dot
+    width: 15px
+    height: 15px
+    margin: 5px 7px
