@@ -10,6 +10,18 @@
   background-color: #fff
   z-index: 50
 
+// ----------
+// Logo
+// ----------
+.logo
+  &-container 
+    display: flex
+    align-items: center
+  &-img
+    border-radius: 50%
+  &-description
+    @extend %font-play-bold
+
 // ----------  
 // Navigation
 // ----------
@@ -57,8 +69,17 @@
   // Header
   // ----------
   .sticky-header
-    padding: 40px 0
+    padding: 5px 0
     justify-content: space-evenly
+  
+  // ----------
+  // Logo
+  // ----------
+  .logo
+    &-img
+    &-description
+      font-size: 38px
+
   // ----------
   // Navigation
   // ----------
@@ -86,8 +107,9 @@
   // Header
   // ----------
   .sticky-header
-    padding: 20px 0
+    padding: 0
     justify-content: space-evenly
+
   // ----------
   // Navigation
   // ----------
@@ -98,10 +120,18 @@
       font-size: 24px
 
   // ----------
+  // Logo
+  // ----------
+  .logo
+    &-img
+    &-description
+      font-size: 38px
+
+  // ----------
   // Call
   // ----------
   .call
-    font-size: 20px
+    font-size: 22px
     &-phone
       margin-bottom: 5px
     &::after
@@ -115,8 +145,19 @@
   // Header
   // ----------
   .sticky-header
-    padding: 20px 0
+    padding: 0
     justify-content: space-evenly
+
+  // ----------
+  // Logo
+  // ----------
+  .logo
+    &-img
+      width: 120px
+      height: 120px
+    &-description
+      font-size: 32px
+
   // ----------
   // Navigation
   // ----------
@@ -144,8 +185,19 @@
   // Header
   // ----------
   .sticky-header
-    padding: 20px 0
+    padding: 0
     justify-content: space-evenly
+
+  // ----------
+  // Logo
+  // ----------
+  .logo
+    &-img
+      width: 120px
+      height: 120px
+    &-description
+      font-size: 24px
+
   // ----------
   // Navigation
   // ----------
@@ -173,8 +225,19 @@
   // Header
   // ----------
   .sticky-header
-    padding: 20px 0
+    padding: 0
     justify-content: space-between
+
+  // ----------
+  // Logo
+  // ----------
+  .logo
+    &-img
+      width: 120px
+      height: 120px
+    &-description
+      font-size: 24px
+
   // ----------
   // Navigation
   // ----------
@@ -204,8 +267,19 @@
   // Header
   // ----------
   .sticky-header
-    padding: 20px 0
+    padding: 0
     justify-content: space-between
+
+  // ----------
+  // Logo
+  // ----------
+  .logo
+    &-img
+      width: 120px
+      height: 120px
+    &-description
+      display: none
+
   // ----------
   // Navigation
   // ----------
