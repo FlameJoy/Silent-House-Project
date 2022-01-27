@@ -15,7 +15,10 @@ section.pricelist
         // newBuilding-container 
         // ------------------------
         #newBuilding.pricelist-newBuilding-container 
-          .pricelist-box
+          // ------------------------
+          // Draft renovation
+          // ------------------------
+          .pricelist-box.animate__fadeInLeft.animate__animated
             img.pricelist-box__img(src="assets/images/dest/pricelist-img-1.jpg" alt="pricelist-img-1")
             h4.pricelist-box__name Черновой ремонт
             ul.pricelist-box__list СПИСОК РАБОТ:
@@ -29,13 +32,21 @@ section.pricelist
               li.pricelist-box__item Облицовка ванной пласт. панелями
               li.pricelist-box__item Замена всех светильников
               li.pricelist-box__item Вынос мусора и разгрузка материала
-              li.pricelist-box__item.empty
-              li.pricelist-box__item.empty
-              li.pricelist-box__item.empty
+            ul.pricelist-box__list ЧЕРНОВЫЕ МАТЕРИАЛЫ:
+              .pricelist-box-icons 
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/bucket.png' alt="icon-1")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/drywall.png' alt="icon-2")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/copper.png' alt="icon-3")
+              li.pricelist-box__item Смеси, грунтовки
+              li.pricelist-box__item Гипсокартон, профили
+              li.pricelist-box__item Медная проводка
             .pricelist-box-price от 3100 руб/м
               span.suptext 2
             button.pricelist-box-btn.btn Расчитать
-          .pricelist-box
+          // ------------------------
+          // Cleaning renovation
+          // ------------------------
+          .pricelist-box.animate__fadeInLeft.animate__animated
             img.pricelist-box__img(src="assets/images/dest/pricelist-img-2.jpeg" alt="pricelist-img-1")
             h4.pricelist-box__name Чистовой ремонт 
             ul.pricelist-box__list СПИСОК РАБОТ:
@@ -52,10 +63,27 @@ section.pricelist
               li.pricelist-box__item Грунтовка
               li.pricelist-box__item Шпаклевка
               li.pricelist-box__item Наливной пол
+            ul.pricelist-box__list ЧИСТОВЫЕ МАТЕРИАЛЫ:
+              .pricelist-box-icons 
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/wallpaper.png' alt="icon-wallpaper")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/laminate.png' alt="icon-laminate")
+              li.pricelist-box__item Обои
+              li.pricelist-box__item Ламинат
+            ul.pricelist-box__list ЧЕРНОВЫЕ МАТЕРИАЛЫ:
+              .pricelist-box-icons 
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/bucket.png' alt="icon-bucket")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/drywall.png' alt="icon-drywall")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/copper.png' alt="icon-copper")
+              li.pricelist-box__item Смеси, грунтовки
+              li.pricelist-box__item Гипсокартон, профили
+              li.pricelist-box__item Медная проводка
             .pricelist-box-price от 2700 руб/м
               span.suptext 2
             button.pricelist-box-btn.btn Расчитать
-          .pricelist-box
+          // ------------------------
+          // "On key" renovation
+          // ------------------------
+          .pricelist-box.animate__fadeInLeft.animate__animated
             img.pricelist-box__img(src="assets/images/dest/pricelist-img-3.jpg" alt="pricelist-img-1")
             h4.pricelist-box__name Ремонт под ключ
             ul.pricelist-box__list СПИСОК РАБОТ:
@@ -72,14 +100,37 @@ section.pricelist
               li.pricelist-box__item Установка стеновых панелей 
               li.pricelist-box__item Разводка труб, сборка сантехшкафа 
               li.pricelist-box__item Монтаж и замена сантехники 
+            ul.pricelist-box__list ЧИСТОВЫЕ МАТЕРИАЛЫ:
+              .pricelist-box-icons 
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/wallpaper.png' alt="icon-wallpaper")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/laminate.png' alt="icon-laminate")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/tile.png' alt="icon-tile")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/door.png' alt="icon-door")
+              li.pricelist-box__item Обои
+              li.pricelist-box__item Ламинат
+              li.pricelist-box__item Настенная и напольная плитка
+              li.pricelist-box__item Межкомнатные двери
+            ul.pricelist-box__list ЧЕРНОВЫЕ МАТЕРИАЛЫ:
+              .pricelist-box-icons 
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/bucket.png' alt="icon-bucket")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/drywall.png' alt="icon-drywall")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/ceiling.png' alt="icon-ceiling")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/copper.png' alt="icon-copper")
+              li.pricelist-box__item Смеси, грунтовки
+              li.pricelist-box__item Гипсокартон, профили
+              li.pricelist-box__item Реечный и натяжной потолок
+              li.pricelist-box__item Медная проводка
             .pricelist-box-price от 5500 руб/м
               span.suptext 2
             button.pricelist-box-btn.btn Расчитать
         // ------------------------
         // resaleBuilding-container
         // ------------------------
-        #resaleBuilding.pricelist-resaleBuilding-container 
-          .pricelist-box
+        #resaleBuilding.pricelist-resaleBuilding-container
+          // ------------------------
+          // Cosmetic
+          // ------------------------
+          .pricelist-box.animate__fadeInLeft.animate__animated
             img.pricelist-box__img(src="assets/images/dest/pricelist-img-4.jpg" alt="pricelist-img-1")
             h4.pricelist-box__name Косметический ремонт 
             ul.pricelist-box__list СПИСОК РАБОТ:
@@ -92,13 +143,31 @@ section.pricelist
               li.pricelist-box__item Укладка плитки на пол 
               li.pricelist-box__item Установка стеновых панелей 
               li.pricelist-box__item Монтаж и замена сантехники
-              li.pricelist-box__item.empty
-              li.pricelist-box__item.empty
-              li.pricelist-box__item.empty
+            ul.pricelist-box__list ЧИСТОВЫЕ МАТЕРИАЛЫ:
+              .pricelist-box-icons 
+                  img.pricelist-box__icon(src='assets/images/dest/ICONS/wallpaper.png' alt="icon-wallpaper")
+                  img.pricelist-box__icon(src='assets/images/dest/ICONS/linoleum.png' alt="icon-linoleum")
+                  img.pricelist-box__icon(src='assets/images/dest/ICONS/tile.png' alt="icon-tile")
+                  img.pricelist-box__icon(src='assets/images/dest/ICONS/panels.png' alt="icon-panels")
+              li.pricelist-box__item Обои
+              li.pricelist-box__item Линолеум
+              li.pricelist-box__item Настенная и напольная плитка
+              li.pricelist-box__item Пластиковые панели
+            ul.pricelist-box__list ЧЕРНОВЫЕ МАТЕРИАЛЫ:
+              .pricelist-box-icons 
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/bucket.png' alt="icon-bucket")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/drywall.png' alt="icon-drywall")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/ceiling.png' alt="icon-ceiling")
+              li.pricelist-box__item Смеси, грунтовки
+              li.pricelist-box__item Гипсокартон, профили
+              li.pricelist-box__item Реечный и натяжной потолок
             .pricelist-box-price от 2700 руб/м
               span.suptext 2
             button.pricelist-box-btn.btn Расчитать
-          .pricelist-box
+          // ------------------------
+          // Full renovation
+          // ------------------------
+          .pricelist-box.animate__fadeInLeft.animate__animated
             img.pricelist-box__img(src="assets/images/dest/pricelist-img-5.jpg" alt="pricelist-img-1")
             h4.pricelist-box__name Капитальный ремонт 
             ul.pricelist-box__list СПИСОК РАБОТ:
@@ -114,10 +183,33 @@ section.pricelist
               li.pricelist-box__item Установка стеновых панелей 
               li.pricelist-box__item Разводка труб, сборка сантехшкафа 
               li.pricelist-box__item Монтаж и замена сантехники 
+            ul.pricelist-box__list ЧИСТОВЫЕ МАТЕРИАЛЫ:
+              .pricelist-box-icons 
+                  img.pricelist-box__icon(src='assets/images/dest/ICONS/wallpaper.png' alt="icon-wallpaper")
+                  img.pricelist-box__icon(src='assets/images/dest/ICONS/laminate.png' alt="icon-laminate")
+                  img.pricelist-box__icon(src='assets/images/dest/ICONS/tile.png' alt="icon-tile")
+                  img.pricelist-box__icon(src='assets/images/dest/ICONS/door.png' alt="icon-door")
+              li.pricelist-box__item Обои
+              li.pricelist-box__item Ламинат
+              li.pricelist-box__item Настенная и напольная плитка
+              li.pricelist-box__item Межкомнатные двери
+            ul.pricelist-box__list ЧЕРНОВЫЕ МАТЕРИАЛЫ:
+              .pricelist-box-icons 
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/bucket.png' alt="icon-bucket")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/drywall.png' alt="icon-drywall")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/ceiling.png' alt="icon-ceiling")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/copper.png' alt="icon-copper")
+              li.pricelist-box__item Смеси, грунтовки
+              li.pricelist-box__item Гипсокартон, профили
+              li.pricelist-box__item Реечный и натяжной потолок
+              li.pricelist-box__item Медная проводка
             .pricelist-box-price от 5500 руб/м
               span.suptext 2
             button.pricelist-box-btn.btn Расчитать
-          .pricelist-box
+          // ------------------------
+          // Design renovation
+          // ------------------------
+          .pricelist-box.animate__fadeInLeft.animate__animated
             img.pricelist-box__img(src="assets/images/dest/pricelist-img-6.jpg" alt="pricelist-img-1")
             h4.pricelist-box__name Дизайнерский ремонт
             ul.pricelist-box__list СПИСОК РАБОТ:
@@ -134,6 +226,28 @@ section.pricelist
               li.pricelist-box__item Установка стеновых панелей 
               li.pricelist-box__item Разводка труб, сборка сантехшкафа 
               li.pricelist-box__item Монтаж и замена сантехники 
+            ul.pricelist-box__list ЧИСТОВЫЕ МАТЕРИАЛЫ:
+              .pricelist-box-icons 
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/wallpaper.png' alt="icon-wallpaper")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/parquet.png' alt="icon-parquet")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/tile.png' alt="icon-tile")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/door.png' alt="icon-door")
+              li.pricelist-box__item Обои
+              li.pricelist-box__item Паркетная доска
+              li.pricelist-box__item Настенная и напольная плитка
+              li.pricelist-box__item Межкомнатные двери
+            ul.pricelist-box__list ЧЕРНОВЫЕ МАТЕРИАЛЫ:
+              .pricelist-box-icons 
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/bucket.png' alt="icon-bucket")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/drywall.png' alt="icon-drywall")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/ceiling.png' alt="icon-ceiling")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/temperature.png' alt="icon-temperature")
+                img.pricelist-box__icon(src='assets/images/dest/ICONS/copper.png' alt="icon-copper")
+              li.pricelist-box__item Смеси, грунтовки
+              li.pricelist-box__item Гипсокартон, профили
+              li.pricelist-box__item Реечный и натяжной потолок
+              li.pricelist-box__item Теплозвукоизоляционные материалы
+              li.pricelist-box__item Медная проводка
             .pricelist-box-price от 8500 руб/м
               span.suptext 2
             button.pricelist-box-btn.btn Расчитать

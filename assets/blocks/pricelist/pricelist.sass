@@ -13,6 +13,12 @@
   border: 1px solid #bdbdbd
   border-radius: 6px
   width: 32%
+  &-icons
+    @extend %flex-row
+  &__icon
+    width: 30px
+    height: 30px
+    margin: 8px 6px
   &__name
     @extend %font-play-bold
     position: absolute
@@ -209,6 +215,10 @@
 // Screen resolution from 900px to 1200px
 // ---------------------------------------
 @media (min-width: 900px) and (max-width: 1199.98px)
+  .pricelist-newBuilding-container,
+  .pricelist-resaleBuilding-container  
+    flex-direction: column
+
   .pricelist-header-switch-container
     margin-bottom: 30px
 
@@ -220,19 +230,21 @@
     margin-left: -3%
 
   .pricelist-box
+    width: 100%
+    margin-bottom: 20px
     &__name
       padding: 6px 12px
-      font-size: 18px
+      font-size: 34px
     &__list
       padding: 15px 25px
-      font-size: 20px
+      font-size: 28px
     &__item
       margin-left: 15px
       padding: 3px 0
-      font-size: 18px
+      font-size: 24px
     &-price
       padding: 15px 25px
-      font-size: 24px
+      font-size: 42px
 
   .pricelist-box__item:nth-child(1)
     margin-top: 10px
