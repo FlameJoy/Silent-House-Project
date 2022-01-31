@@ -1,0 +1,103 @@
+.brands-content
+  display: grid
+  justify-content: space-between
+  grid-template-columns: repeat(4, 1fr)
+
+.brand
+  &-box
+    grid-column: span 1
+  &__img
+    width: 100%
+  &__text
+    @extend %font-play-normal
+    text-align: center
+
+// ---------------------------------------
+// Adaptivity
+// ---------------------------------------
+// Screen resolution from 1920px and more
+// ---------------------------------------
+@media (min-width: 1920px)
+  .brands-content
+    gap: 60px 40px
+
+  .brand
+    &__img
+      height: 250px
+    &__text
+      font-size: 24px
+      padding: 5px 0
+// ---------------------------------------
+// Screen resolution from 1600px to 1920px
+// ---------------------------------------
+@media (min-width: 1600px) and (max-width: 1919.98px)
+  .brands-content
+    gap: 60px 40px
+    
+  .brand
+    &__img
+      height: 220px
+    &__text
+      font-size: 20px
+      padding: 10px 0
+
+// ---------------------------------------
+// Screen resolution from 1200px to 1600px
+// ---------------------------------------
+@media (min-width: 1200px) and (max-width: 1599.98px)
+  .brands-content
+    gap: 60px 40px
+    grid-template-columns: repeat(3, 1fr)
+    
+  .brand
+    &__img
+      height: 220px
+    &__text
+      font-size: 20px
+      padding: 10px 0
+
+// ---------------------------------------
+// Screen resolution from 900px to 1200px
+// ---------------------------------------
+@media (min-width: 900px) and (max-width: 1199.98px)
+  .brands-content
+    gap: 60px 40px
+    grid-template-columns: repeat(2, 1fr)
+    
+  .brand
+    &__img
+      height: 240px
+    &__text
+      font-size: 24px
+      padding: 10px 0
+
+// ---------------------------------------
+// Screen resolution from 600px to 900px
+// ---------------------------------------
+@media (min-width: 600px) and (max-width: 899.98px)
+  .brands-content
+    gap: 40px 20px
+    grid-template-columns: repeat(3, 1fr)
+    
+  .brand
+    &__img
+      height: 100px
+    &__text
+      font-size: 14px
+      padding: 10px 0
+// ---------------------------------------
+// Screen resolution from 320px to 600px
+// ---------------------------------------
+@media (min-width: 320px) and (max-width: 599.98px)
+  .brands-content
+    gap: 30px 10px
+    grid-template-columns: repeat(3, 1fr)
+    
+  .brand
+    &__img
+      width: 69.9167px
+      height: 50px
+    &__text
+      width: 69.9167px
+      font-size: 10px
+      padding: 10px 0
