@@ -42,10 +42,10 @@ function showSlides(n, no) {
   if (n > slides.length) {slideIndex[no] = 1}
   if (n < 1) {slideIndex[no] = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex[no]-1].style.display = "block";
   dots[slideIndex[no]-1].className += " active";
@@ -286,3 +286,69 @@ Ant.initialize = function(that) {
 };
 
 new Ant();
+
+// -----------------------------------
+// Portfolio slider
+// -----------------------------------
+
+// Tabs switch funtion
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+function openTabcontent(evt, tabName) {
+  // Declare all variables
+  let i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("portfolio-slider-tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("portfolio-slider-tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active-tab";
+} 
+
+// Multiple portfolio slider script
+
+let portfolioSlideIndex = [1,1,1,1,1,1];
+let portfolioSlideId = ["portfolioSlides1", "portfolioSlides2", "portfolioSlides3", "portfolioSlides4", "portfolioSlides5", "portfolioSlides6"];
+let portfolioDotsId = ["portfolio-slider-dot1", "portfolio-slider-dot2", "portfolio-slider-dot3", "portfolio-slider-dot4", "portfolio-slider-dot5", "portfolio-slider-dot6"];
+showPortfolioSlides(1, 0);
+showPortfolioSlides(1, 1);
+showPortfolioSlides(1, 2);
+showPortfolioSlides(1, 3);
+showPortfolioSlides(1, 4);
+showPortfolioSlides(1, 5);
+
+function portfolioPlusSlides(n, no) {
+  showPortfolioSlides(portfolioSlideIndex[no] += n, no);
+}
+
+function portfolioCurrentSlide(n, no) {
+  showPortfolioSlides(portfolioSlideIndex[no] = n, no);
+}
+
+function showPortfolioSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(portfolioSlideId[no]);
+	let y = document.getElementsByClassName(portfolioDotsId[no]);
+  if (n > x.length) {portfolioSlideIndex[no] = 1}
+  if (n < 1) {portfolioSlideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+	for (i = 0; i < y.length; i++) {
+		y[i].className = y[i].className.replace(" active", "");
+	}
+  x[portfolioSlideIndex[no]-1].style.display = "block";
+	y[portfolioSlideIndex[no]-1].className += " active";
+}

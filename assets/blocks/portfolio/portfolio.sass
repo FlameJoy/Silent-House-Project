@@ -1,0 +1,333 @@
+.portfolio-slider-tabs 
+  @extend %flex-row
+  justify-content: center
+
+.portfolio-slider-tablink
+  @extend %font-play-bold
+  border: none
+  border-radius: 4px
+  text-transform: uppercase
+  margin: 0 2px
+
+.portfolio-slider-tabcontent
+  display: none
+  
+.active-tab
+  background-color: $color-yellow
+
+.portfolio-slider-container
+  position: relative
+  display: flex
+  justify-content: center
+
+.portfolioSlides1
+  display: none
+
+.portfolio-slider-img
+  height: 100%
+  width: 100%
+  border-radius: 6px
+
+.portfolio-prev-btn, .portfolio-next-btn
+  cursor: pointer
+  position: absolute
+  width: auto
+  color: $color-yellow
+  font-weight: bold
+  transition: 0.6s ease
+  border-radius: 0 3px 3px 0
+  user-select: none
+
+.portfolio-next-btn
+  border-radius: 3px 0 0 3px
+
+.portfolio-prev-btn:hover, .portfolio-next-btn:hover 
+  background-color: rgba(0,0,0,0.8)
+
+.portfolio-slider-dot1,
+.portfolio-slider-dot2,
+.portfolio-slider-dot3,
+.portfolio-slider-dot4,
+.portfolio-slider-dot5,
+.portfolio-slider-dot6
+  cursor: pointer
+  background-color: #bbb
+  border-radius: 50%
+  display: inline-block
+  transition: background-color 0.6s ease
+
+// ---------------------------------------
+// Adaptivity
+// ---------------------------------------
+// Screen resolution from 1920px and more
+// ---------------------------------------
+@media (min-width: 1920px)
+  .portfolio-slider-tablink
+    font-size: 28px
+    padding: 10px
+
+  .portfolio-slider-tabcontent
+    margin-top: 30px
+
+  .portfolioSlides1,
+  .portfolioSlides2,
+  .portfolioSlides3,
+  .portfolioSlides4,
+  .portfolioSlides5,
+  .portfolioSlides6
+    width: 1200px
+    height: 800px
+
+  .portfolio-prev-btn, 
+  .portfolio-next-btn
+    top: 49%
+    margin-top: -22px
+    padding: 16px
+    font-size: 42px
+
+  .portfolio-prev-btn
+    left: 167px
+
+  .portfolio-next-btn
+    right: 168px
+    border-radius: 3px 0 0 3px
+
+  .portfolio-slider-dot1,
+  .portfolio-slider-dot2,
+  .portfolio-slider-dot3,
+  .portfolio-slider-dot4,
+  .portfolio-slider-dot5,
+  .portfolio-slider-dot6
+    height: 15px
+    width: 15px
+    margin: 0 4px
+
+// ---------------------------------------
+// Screen resolution from 1600px to 1920px
+// ---------------------------------------
+@media (min-width: 1600px) and (max-width: 1919.98px)
+  .portfolio-slider-tablink
+    font-size: 20px
+    padding: 10px
+
+  .portfolio-slider-tabcontent
+    margin-top: 30px
+
+  .portfolioSlides1,
+  .portfolioSlides2,
+  .portfolioSlides3,
+  .portfolioSlides4,
+  .portfolioSlides5,
+  .portfolioSlides6
+    width: 1000px
+    height: 500px
+
+  .portfolio-prev-btn, 
+  .portfolio-next-btn
+    top: 49%
+    margin-top: -22px
+    padding: 16px
+    font-size: 30px
+
+  .portfolio-prev-btn
+    left: 134px
+
+  .portfolio-next-btn
+    right: 133px
+    border-radius: 3px 0 0 3px
+
+  .portfolio-slider-dot1,
+  .portfolio-slider-dot2,
+  .portfolio-slider-dot3,
+  .portfolio-slider-dot4,
+  .portfolio-slider-dot5,
+  .portfolio-slider-dot6
+    height: 15px
+    width: 15px
+    margin: 0 4px
+
+// ---------------------------------------
+// Screen resolution from 1200px to 1600px
+// ---------------------------------------
+@media (min-width: 1200px) and (max-width: 1599.98px)
+  .portfolio-slider-tablink
+    font-size: 16px
+    padding: 10px
+
+  .portfolio-slider-tabcontent
+    margin-top: 30px
+
+  .portfolioSlides1,
+  .portfolioSlides2,
+  .portfolioSlides3,
+  .portfolioSlides4,
+  .portfolioSlides5,
+  .portfolioSlides6
+    width: 800px
+    height: 400px
+
+  .portfolio-prev-btn, 
+  .portfolio-next-btn
+    top: 49%
+    margin-top: -22px
+    padding: 16px
+    font-size: 30px
+
+  .portfolio-prev-btn
+    left: 80px
+
+  .portfolio-next-btn
+    right: 80px
+    border-radius: 3px 0 0 3px
+
+  .portfolio-slider-dot1,
+  .portfolio-slider-dot2,
+  .portfolio-slider-dot3,
+  .portfolio-slider-dot4,
+  .portfolio-slider-dot5,
+  .portfolio-slider-dot6
+    height: 15px
+    width: 15px
+    margin: 0 4px
+
+// ---------------------------------------
+// Screen resolution from 900px to 1200px
+// ---------------------------------------
+@media (min-width: 900px) and (max-width: 1199.98px)
+  .portfolio-slider-tablink
+    font-size: 14px
+    padding: 10px
+
+  .portfolio-slider-tabcontent
+    margin-top: 30px
+
+  .portfolioSlides1,
+  .portfolioSlides2,
+  .portfolioSlides3,
+  .portfolioSlides4,
+  .portfolioSlides5,
+  .portfolioSlides6
+    width: 800px
+    height: 400px
+
+  .portfolio-prev-btn, 
+  .portfolio-next-btn
+    top: 49%
+    margin-top: -22px
+    padding: 16px
+    font-size: 30px
+
+  .portfolio-prev-btn
+    left: 0px
+
+  .portfolio-next-btn
+    right: 0px
+    border-radius: 3px 0 0 3px
+
+  .portfolio-slider-dot1,
+  .portfolio-slider-dot2,
+  .portfolio-slider-dot3,
+  .portfolio-slider-dot4,
+  .portfolio-slider-dot5,
+  .portfolio-slider-dot6
+    height: 15px
+    width: 15px
+    margin: 0 4px
+
+// ---------------------------------------
+// Screen resolution from 600px to 900px
+// ---------------------------------------
+@media (min-width: 600px) and (max-width: 899.98px)
+  .portfolio-slider-tabs
+    flex-direction: column
+    
+  .portfolio-slider-tablink
+    font-size: 14px
+    padding: 10px
+    margin: 5px 0
+    width: 100%
+
+  .portfolio-slider-tabcontent
+    margin-top: 30px
+
+  .portfolioSlides1,
+  .portfolioSlides2,
+  .portfolioSlides3,
+  .portfolioSlides4,
+  .portfolioSlides5,
+  .portfolioSlides6
+    width: 800px
+    height: 300px
+
+  .portfolio-prev-btn, 
+  .portfolio-next-btn
+    top: 49%
+    margin-top: -22px
+    padding: 16px
+    font-size: 30px
+
+  .portfolio-prev-btn
+    left: 0px
+
+  .portfolio-next-btn
+    right: 0px
+    border-radius: 3px 0 0 3px
+
+  .portfolio-slider-dot1,
+  .portfolio-slider-dot2,
+  .portfolio-slider-dot3,
+  .portfolio-slider-dot4,
+  .portfolio-slider-dot5,
+  .portfolio-slider-dot6
+    height: 15px
+    width: 15px
+    margin: 0 4px
+
+// ---------------------------------------
+// Screen resolution from 320px to 600px
+// ---------------------------------------
+@media (min-width: 320px) and (max-width: 599.98px)
+  .portfolio-slider-tabs
+    flex-direction: column
+    
+  .portfolio-slider-tablink
+    font-size: 14px
+    padding: 10px
+    margin: 5px 0
+    width: 100%
+
+  .portfolio-slider-tabcontent
+    margin-top: 30px
+
+  .portfolioSlides1,
+  .portfolioSlides2,
+  .portfolioSlides3,
+  .portfolioSlides4,
+  .portfolioSlides5,
+  .portfolioSlides6
+    width: 600px
+    height: 200px
+
+  .portfolio-prev-btn, 
+  .portfolio-next-btn
+    top: 49%
+    margin-top: -22px
+    padding: 16px
+    font-size: 30px
+
+  .portfolio-prev-btn
+    left: 0px
+
+  .portfolio-next-btn
+    right: 0px
+    border-radius: 3px 0 0 3px
+
+  .portfolio-slider-dot1,
+  .portfolio-slider-dot2,
+  .portfolio-slider-dot3,
+  .portfolio-slider-dot4,
+  .portfolio-slider-dot5,
+  .portfolio-slider-dot6
+    height: 15px
+    width: 15px
+    margin: 0 4px
