@@ -1,0 +1,55 @@
+.discount
+  background: url(../images/dest/city-1.jpg) no-repeat center
+  background-size: cover
+  padding-top: 10px
+  &-percent
+    display: flex
+    @extend %font-play-bold
+    background: url(../images/dest/discount-back.png) no-repeat center
+    background-size: 40%, contain
+    background-position-x: 46%
+    justify-content: center
+    align-items: center
+  &-num
+    color: $color-red
+    @extend %text-shadow
+  &-btn
+    @extend %font-play-bold
+
+// ---------------------------------------
+// Adaptivity
+// ---------------------------------------
+// Screen resolution from 1920px and more
+// ---------------------------------------
+@media (min-width: 1920px)
+
+// ---------------------------------------
+// Screen resolution from 1600px to 1920px
+// ---------------------------------------
+@media (min-width: 1600px) and (max-width: 1919.98px)
+  .discount
+    &-percent
+      font-size: 60px
+      height: 300px
+    &-btn
+      font-size: 32px
+      margin-top: 40px
+// ---------------------------------------
+// Screen resolution from 1200px to 1600px
+// ---------------------------------------
+@media (min-width: 1200px) and (max-width: 1599.98px)
+
+// ---------------------------------------
+// Screen resolution from 900px to 1200px
+// ---------------------------------------
+@media (min-width: 900px) and (max-width: 1199.98px)
+
+// ---------------------------------------
+// Screen resolution from 600px to 900px
+// ---------------------------------------
+@media (min-width: 600px) and (max-width: 899.98px)
+
+// ---------------------------------------
+// Screen resolution from 320px to 600px
+// ---------------------------------------
+@media (min-width: 320px) and (max-width: 599.98px)

@@ -1,0 +1,64 @@
+.control
+  position: relative
+  margin-top: 60px
+  &-container
+    padding-top: 30px
+  &::before
+    content: ''
+    position: absolute
+    background: url(../images/dest/control-background.jpeg) no-repeat center
+    background-size: cover
+    filter: blur(3px) opacity(60%)
+    height: 700px
+    width: 100%
+    z-index: -1
+
+.control
+  &__item
+    @extend %flex-row
+    @extend %font-play-normal
+    &::before
+      font-family: FontAwesome
+      content: "\f560"
+      color: $color-yellow
+  
+// ---------------------------------------
+// Adaptivity
+// ---------------------------------------
+// Screen resolution from 1920px and more
+// ---------------------------------------
+@media (min-width: 1920px)
+
+// ---------------------------------------
+// Screen resolution from 1600px to 1920px
+// ---------------------------------------
+@media (min-width: 1600px) and (max-width: 1919.98px)
+  .control
+    height: 700px
+
+  .control__item
+    font-size: 28px
+    margin: 25px 0
+    &::before
+      font-size: 42px
+      margin-right: 20px
+
+// ---------------------------------------
+// Screen resolution from 1200px to 1600px
+// ---------------------------------------
+@media (min-width: 1200px) and (max-width: 1599.98px)
+
+// ---------------------------------------
+// Screen resolution from 900px to 1200px
+// ---------------------------------------
+@media (min-width: 900px) and (max-width: 1199.98px)
+
+// ---------------------------------------
+// Screen resolution from 600px to 900px
+// ---------------------------------------
+@media (min-width: 600px) and (max-width: 899.98px)
+
+// ---------------------------------------
+// Screen resolution from 320px to 600px
+// ---------------------------------------
+@media (min-width: 320px) and (max-width: 599.98px)
