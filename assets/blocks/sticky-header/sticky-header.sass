@@ -47,17 +47,17 @@
   @extend %font-play-bold
   cursor: pointer
   user-select: none
-  &::after
-    content: '\f2a0'
-    font-family: FontAwesome
-    margin-left: 10px
 
-.call:hover 
-  .call-phone,
-  .call-text,
-  &::after
-    color: $color-yellow
-    @extend %text-shadow
+.call-phone
+  content: '\f2a0'
+  font-family: FontAwesome
+  cursor: pointer
+
+.call-whatsup
+  font-family: FontAwesome
+  content: "\f40c"
+  color: #43d854
+  cursor: pointer
 
 // ---------------------------------------
 // Adaptivity
@@ -96,10 +96,13 @@
   // ----------
   .call
     font-size: 28px
-    &-phone
-      margin-bottom: 5px
-    &::after
-      font-size: 48px
+
+  .call-whatsup,
+  .call-phone
+    font-size: 58px
+
+  .call-phone
+    margin-left: 40px
 
 // ---------------------------------------
 // Screen resolution from 1600px to 1920px
@@ -136,10 +139,13 @@
   // ----------
   .call
     font-size: 22px
-    &-phone
-      margin-bottom: 5px
-    &::after
-      font-size: 42px
+
+  .call-whatsup,
+  .call-phone
+    font-size: 58px
+
+  .call-phone
+    margin-left: 40px
 
 // ---------------------------------------
 // Screen resolution from 1200px to 1600px
@@ -175,11 +181,14 @@
   // Call
   // ----------
   .call
-    font-size: 18px
-    &-phone
-      margin-bottom: 5px
-    &::after
-      font-size: 38px
+    font-size: 22px
+
+  .call-whatsup,
+  .call-phone
+    font-size: 52px
+
+  .call-phone
+    margin-left: 40px
 
 // ---------------------------------------
 // Screen resolution from 900px to 1200px
@@ -215,11 +224,14 @@
   // Call
   // ----------
   .call
-    font-size: 16px
-    &-phone
-      margin-bottom: 5px
-    &::after
-      font-size: 32px
+    font-size: 22px
+
+  .call-whatsup,
+  .call-phone
+    font-size: 52px
+
+  .call-phone
+    margin-left: 40px
 
 // ---------------------------------------
 // Screen resolution from 600px to 900px
@@ -252,12 +264,15 @@
   // Call
   // ----------
   .call
-    font-size: 16px
+    font-size: 22px
     margin-right: 25px
-    &-phone
-      margin-bottom: 5px
-    &::after
-      font-size: 32px
+
+  .call-whatsup,
+  .call-phone
+    font-size: 52px
+
+  .call-phone
+    margin-left: 40px
 
   // Logo
   .logo-container
@@ -294,12 +309,15 @@
   // Call
   // ----------
   .call
-    font-size: 14px
-    margin-right: 15px
-    &-phone
-      margin-bottom: 5px
-    &::after
-      font-size: 24px
+    font-size: 22px
+    margin-right: 25px
+
+  .call-whatsup,
+  .call-phone
+    font-size: 48px
+
+  .call-phone
+    margin-left: 40px
 
   // Logo
   .logo-container

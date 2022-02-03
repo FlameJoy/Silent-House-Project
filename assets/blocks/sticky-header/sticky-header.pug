@@ -21,7 +21,8 @@ header
       // --------------
       // Call btn
       // --------------
-      .call(onclick="")
-        .call-wrap
-          .call-phone +7 (***) ***-**-**
-          .call-text Запись на замерку
+      .call
+        a.call-whatsup(href="https://api.whatsapp.com/send/?phone=79629270566")
+          i.fab.fa-whatsapp-square
+        a.call-phone(href="href="tel:79629270566"")
+          i.fas.fa-phone-square-alt

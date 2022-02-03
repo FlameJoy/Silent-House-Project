@@ -1,0 +1,78 @@
+.footer
+  background-color: $color-darkgrey
+  &-container
+    padding: 2%
+
+.footer-header .footer-header__title
+  color: #fff
+
+.footer-contacts
+  @extend %flex-row
+  justify-content: space-evenly
+
+.footer-contacts-box
+  @extend %flex-column
+  justify-content: center
+  align-items: center
+
+.footer-box
+  &__text
+    @extend %font-play-normal
+    color: #fff
+
+.footer-icon
+  color: $color-yellow
+
+.footer-line
+  background-color: $color-yellow
+  width: 100%
+  height: 2px
+  border-radius: 50%
+  margin: 20px 0
+
+.footer-social-instagram
+  color: $color-yellow
+  cursor: pointer
+
+// ---------------------------------------
+// Adaptivity
+// ---------------------------------------
+// Screen resolution from 1920px and more
+// ---------------------------------------
+@media (min-width: 1920px)
+
+// ---------------------------------------
+// Screen resolution from 1600px to 1920px
+// ---------------------------------------
+@media (min-width: 1600px) and (max-width: 1919.98px)
+  .footer-icon
+    font-size: 60px
+    padding: 15px
+
+  .footer-box
+    &__text
+      font-size: 24px
+      padding: 5px 0
+
+  .footer-social-instagram
+    font-size: 60px
+
+// ---------------------------------------
+// Screen resolution from 1200px to 1600px
+// ---------------------------------------
+@media (min-width: 1200px) and (max-width: 1599.98px)
+
+// ---------------------------------------
+// Screen resolution from 900px to 1200px
+// ---------------------------------------
+@media (min-width: 900px) and (max-width: 1199.98px)
+
+// ---------------------------------------
+// Screen resolution from 600px to 900px
+// ---------------------------------------
+@media (min-width: 600px) and (max-width: 899.98px)
+
+// ---------------------------------------
+// Screen resolution from 320px to 600px
+// ---------------------------------------
+@media (min-width: 320px) and (max-width: 599.98px)
