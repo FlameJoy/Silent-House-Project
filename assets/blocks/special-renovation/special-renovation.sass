@@ -1,5 +1,28 @@
+.special-renovation-content
+  @extend %flex-row
+  justify-content: space-between
 
+.special-renovation-description-wrap
+  @extend %flex-column
+  justify-content: space-between
+  max-width: 49%
 
+.special-renovation-description 
+  &__text
+    @extend %font-play-normal
+    line-height: 1.2em
+
+.special-renovation-description-list 
+  display: grid
+  grid-template-columns: 1fr 1fr
+
+.special-renovation-description
+  &__item
+    grid-column: 1 span
+    @extend %flex-row
+
+.special-renovation-icon
+    color: $color-darkgrey
 // ---------------------------------------
 // Adaptivity
 // ---------------------------------------
@@ -11,7 +34,27 @@
 // Screen resolution from 1600px to 1920px
 // ---------------------------------------
 @media (min-width: 1600px) and (max-width: 1919.98px)
+  .special-renovation-description-list 
+    gap: 15px 10px
+    margin-top: 20px
 
+  .special-renovation-description 
+    &__text
+      font-size: 20px
+
+  .special-renovation-description
+    &__item
+      gap: 15px
+
+  .special-renovation-icon
+    font-size: 24px
+
+  .big-icon
+    margin-left: -5px
+
+  .special-renovation-btn
+    margin-top: 40px
+    font-size: 32px
 // ---------------------------------------
 // Screen resolution from 1200px to 1600px
 // ---------------------------------------

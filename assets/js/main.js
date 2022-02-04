@@ -19,11 +19,13 @@ function switchToggler() {
 // --------------
 // Slider
 // --------------
-let slideIndex = [1, 1];
-let slideID = ["slide1", "slide2"];
-let dotsID = ["slider-dot1", "slider-dot2"];
+let slideIndex = [1, 1, 1, 1];
+let slideID = ["slide1", "slide2", "slide3", "slide4"];
+let dotsID = ["slider-dot1", "slider-dot2", "slider-dot3", "slider-dot4"];
 showSlides(1, 0);
 showSlides(1, 1);
+showSlides(1, 2);
+// showSlides(1, 3);
 
 // Next/previous controls
 function plusSlide(n, no) {

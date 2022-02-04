@@ -3,38 +3,51 @@ section.special-renovation
     .special-renovation-container 
       .special-renovation-header
         h2.special-renovation-header__title Ремонт коттеджей
-        h3.special-renovation-header__subtitle
-      .special-renovation-content 
-        // --------------
-        // Benefits
-        // --------------
-        .warehouse-benefits-container 
-          .warehouse-benefit
-            h4.warehouse-benefit__name Доставка и выкуп материалов
-            p.warehouse-benefit__text На объект завозим все материалы с запасом в 5%. Оставшиеся материалы выкупаем и увозим на склад. 
-          .warehouse-benefit
-            h4.warehouse-benefit__name Привозим на объект за 1 день 
-            p.warehouse-benefit__text Своя служба доставки позволяет быстро доставить материалы в квартиру и начать ремонт без задержок. 
-          .warehouse-benefit
-            h4.warehouse-benefit__name Собственный автопарк 
-            p.warehouse-benefit__text В собственности компании - собственный автопарк, что позволяет быстро доставлять материалы. 
-          .warehouse-benefit
-            button.btn.warehouse-benefit__btn Рассчитать стоимость
+        h3.special-renovation-header__subtitle Ремонт и отделка коттеджей по стандартам 
+      .special-renovation-content
+        .special-renovation-description-wrap
+          .special-renovation-description 
+            p.special-renovation-description__text Мы производим ремонт домов и коттеджей. Заключаем официальный договор. Смета и замеры бесплатно. Ремонт загородных домов под ключ включает разработку дизайн – проекта, закупку материалов, монтаж коммуникаций, инженерных систем, черновую, чистовую отделку, поставку мебели. Настраиваем онлайн-трансляции с объектов на смартфон заказчика. Выполняем работы на профессиональном уровне.
+          ul.special-renovation-description-list 
+            li.special-renovation-description__item
+              i.fas.fa-pencil-ruler.special-renovation-icon
+              .special-renovation-description__text Выезд на объект и замер помещений
+            li.special-renovation-description__item
+              i.fas.fa-draw-polygon.special-renovation-icon
+              .special-renovation-description__text Подготовка дизайн-проекта интерьера и сметы ремонта
+            li.special-renovation-description__item
+              i.fas.fa-vector-square.special-renovation-icon
+              .special-renovation-description__text Общестроительные и демонтажные работы
+            li.special-renovation-description__item
+              i.fas.fa-truck-moving.special-renovation-icon
+              .special-renovation-description__text.big-icon Закупка и доставка черновых материалов
+            li.special-renovation-description__item
+              i.far.fa-object-group.special-renovation-icon
+              .special-renovation-description__text Инженерные работы: электрика, отопление, вентиляция
+            li.special-renovation-description__item
+              i.fas.fa-paint-roller.special-renovation-icon
+              .special-renovation-description__text Чистовые отделочные работы
+            li.special-renovation-description__item
+              i.fas.fa-trash-alt.special-renovation-icon
+              .special-renovation-description__text Уборка и вывоз строительного мусора
+            li.special-renovation-description__item
+              i.fas.fa-couch.special-renovation-icon
+              .special-renovation-description__text.big-icon Поставка мебели и аксессуаров
         // --------------
         // Slider
         // --------------
         .warehouse-slider-container
           .slider-container
             .slide3.animate__fadeIn.animate__animated
-              img.slide__img(src="assets/images/dest/slide-1.jpg" alt="slide-img-1")
+              img.slide__img(src="assets/images/dest/COTTAGE/main_001.jpg" alt="main_001")
             .slide3.animate__fadeIn.animate__animated
-              img.slide__img(src="assets/images/dest/slide-2.jpg" alt="slide-img-2")
+              img.slide__img(src="assets/images/dest/COTTAGE/main_002.jpg" alt="main_002")
             .slide3.animate__fadeIn.animate__animated
-              img.slide__img(src="assets/images/dest/slide-3.jpeg" alt="slide-img-3")
+              img.slide__img(src="assets/images/dest/COTTAGE/main_003.jpg" alt="main_003")
             .slide3.animate__fadeIn.animate__animated
-              img.slide__img(src="assets/images/dest/slide-4.jpg" alt="slide-img-4")
+              img.slide__img(src="assets/images/dest/COTTAGE/main_004.jpg" alt="main_004")
             .slide3.animate__fadeIn.animate__animated
-              img.slide__img(src="assets/images/dest/slide-5.jpg" alt="slide-img-4")
+              img.slide__img(src="assets/images/dest/COTTAGE/main_005.jpg" alt="main_005")
             // --------------
             // Next / Prev btn
             // --------------
@@ -49,3 +62,4 @@ section.special-renovation
             span.slider-dot3(onclick="currentSlide(3, 2)")
             span.slider-dot3(onclick="currentSlide(4, 2)")
             span.slider-dot3(onclick="currentSlide(5, 2)")
+      button.special-renovation-btn.btn Заказать звонок
