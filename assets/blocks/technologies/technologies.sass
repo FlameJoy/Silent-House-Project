@@ -1,26 +1,33 @@
 @media screen and (min-width: 641px) and (max-width: 910px) 
-  .ant-carousel
+  .ant-carousel,
+  .ant-carousel2
     max-width: 540px
 
 @media screen and (max-width: 640px) 
-  .ant-carousel 
+  .ant-carousel,
+  .ant-carousel2
     max-width: 270px
 
-.ant-carousel
+.ant-carousel,
+.ant-carousel2
   background-color: white
 
-.ant-carousel-element
+.ant-carousel-element,
+.ant-carousel-element2
   text-align: center
 
 /* General styles */
-.ant-carousel
+.ant-carousel,
+.ant-carousel2
   width: auto
   position: relative
 
-.ant-carousel-hider 
+.ant-carousel-hider,
+.ant-carousel-hider2
   overflow: hidden
 
-.ant-carousel-list
+.ant-carousel-list,
+.ant-carousel-list2
   width: auto
   margin: 0
   padding: 0
@@ -28,7 +35,8 @@
   display: flex
   justify-content: flex-start
 
-.ant-carousel-element
+.ant-carousel-element,
+.ant-carousel-element2
   display: block
   flex: 0 0 auto
 
@@ -41,7 +49,9 @@
 
 /* Navigation item styles */
 .ant-carousel-arrow-left,
-.ant-carousel-arrow-right 
+.ant-carousel-arrow-right,
+.ant-carousel-arrow-left2,
+.ant-carousel-arrow-right2
   display: block
   border-radius: 6px 
   position: absolute
@@ -51,7 +61,8 @@
   &:hover
     background-color: rgba(0,0,0,0.8)
 
-.ant-carousel-dots 
+.ant-carousel-dots,
+.ant-carousel-dots2
   width: 100%
   height: auto
   position: absolute
@@ -60,7 +71,8 @@
   z-index: 30
   text-align: center
 
-.ant-dot 
+.ant-dot,
+.ant-dot2
   padding: 0
   display: inline-block
   background-color: #BBB
@@ -119,12 +131,14 @@
 // Screen resolution from 1600px to 1920px
 // ---------------------------------------
 @media (min-width: 1600px) and (max-width: 1919.98px)
-  .ant-carousel
+  .ant-carousel,
+  .ant-carousel2
     max-width: 1200px
     margin: 50px auto auto
     padding-top: 10px
 
-  .ant-carousel-element
+  .ant-carousel-element,
+  .ant-carousel-element2
     width: 350px
     height: 450px
     margin: 0 25px
@@ -145,18 +159,23 @@
   // Nav buttons
   // --------------
   .ant-carousel-arrow-left,
-  .ant-carousel-arrow-right
+  .ant-carousel-arrow-right,
+  .ant-carousel-arrow-left2,
+  .ant-carousel-arrow-right2
     font-size: 30px
     padding: 16px  
     top: 40%
 
-  .ant-carousel-arrow-right
+  .ant-carousel-arrow-right,
+  .ant-carousel-arrow-right2
     right: -50px
 
-  .ant-carousel-arrow-left
+  .ant-carousel-arrow-left,
+  .ant-carousel-arrow-left2
     left: -50px
 
-  .ant-dot
+  .ant-dot,
+  .ant-dot2
     width: 15px
     height: 15px
     margin: 5px 7px
