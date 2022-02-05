@@ -24,12 +24,34 @@
 
 .special-renovation-icon
     color: $color-darkgrey
+    
 // ---------------------------------------
 // Adaptivity
 // ---------------------------------------
 // Screen resolution from 1920px and more
 // ---------------------------------------
 @media (min-width: 1920px)
+  .special-renovation-description-list 
+    gap: 15px 10px
+    margin-top: 20px
+
+  .special-renovation-description 
+    &__text
+      font-size: 24px
+
+  .special-renovation-description
+    &__item
+      gap: 15px
+
+  .special-renovation-icon
+    font-size: 30px
+
+  .big-icon
+    margin-left: -5px
+
+  .special-renovation-btn
+    margin-top: 40px
+    font-size: 36px
 
 // ---------------------------------------
 // Screen resolution from 1600px to 1920px
@@ -56,22 +78,130 @@
   .special-renovation-btn
     margin-top: 40px
     font-size: 32px
+
 // ---------------------------------------
 // Screen resolution from 1200px to 1600px
 // ---------------------------------------
 @media (min-width: 1200px) and (max-width: 1599.98px)
+  .special-renovation-description-list 
+    gap: 15px 10px
+    margin-top: 20px
+
+  .special-renovation-description 
+    &__text
+      font-size: 16px
+
+  .special-renovation-description
+    &__item
+      gap: 15px
+
+  .special-renovation-icon
+    font-size: 24px
+
+  .big-icon
+    margin-left: -5px
+
+  .special-renovation-btn
+    margin-top: 40px
+    font-size: 32px
 
 // ---------------------------------------
 // Screen resolution from 900px to 1200px
 // ---------------------------------------
 @media (min-width: 900px) and (max-width: 1199.98px)
+  .special-renovation-content
+    flex-direction: column-reverse
+
+  .special-renovation-description-wrap
+    max-width: 100%
+    margin-top: 20px
+
+  .special-renovation-description-list 
+    gap: 15px 10px
+    margin-top: 20px
+
+  .special-renovation-description 
+    &__text
+      font-size: 16px
+
+  .special-renovation-description
+    &__item
+      gap: 15px
+
+  .special-renovation-icon
+    font-size: 24px
+
+  .big-icon
+    margin-left: -5px
+
+  .special-renovation-btn
+    margin-top: 40px
+    font-size: 32px
 
 // ---------------------------------------
 // Screen resolution from 600px to 900px
 // ---------------------------------------
 @media (min-width: 600px) and (max-width: 899.98px)
+  .special-renovation-content
+    flex-direction: column-reverse
+
+  .special-renovation-description-wrap
+    max-width: 100%
+    margin-top: 20px
+
+  .special-renovation-description-list 
+    gap: 15px 10px
+    margin-top: 20px
+
+  .special-renovation-description 
+    &__text
+      font-size: 16px
+
+  .special-renovation-description
+    &__item
+      gap: 15px
+
+  .special-renovation-icon
+    font-size: 24px
+
+  .big-icon
+    margin-left: -5px
+
+  .special-renovation-btn
+    margin-top: 40px
+    font-size: 32px
 
 // ---------------------------------------
 // Screen resolution from 320px to 600px
 // ---------------------------------------
 @media (min-width: 320px) and (max-width: 599.98px)
+  .special-renovation-content
+    flex-direction: column-reverse
+
+  .special-renovation-description-wrap
+    max-width: 100%
+    margin-top: 20px
+
+  .special-renovation-description-list 
+    gap: 15px 10px
+    margin-top: 20px
+    grid-template-columns: 1fr
+
+  .special-renovation-description 
+    &__text
+      font-size: 14px
+
+  .special-renovation-description
+    &__item
+      gap: 10px
+
+  .special-renovation-icon
+    font-size: 16px
+
+  .big-icon
+    margin-left: -5px
+
+  .special-renovation-btn
+    margin-top: 40px
+    font-size: 20px
+    

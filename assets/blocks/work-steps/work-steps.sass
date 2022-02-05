@@ -15,12 +15,24 @@
 
 .arrow
    color: $color-darkgrey
+
 // ---------------------------------------
 // Adaptivity
 // ---------------------------------------
 // Screen resolution from 1920px and more
 // ---------------------------------------
 @media (min-width: 1920px)
+  .work-steps
+   padding: 60px 0
+
+  .work-step
+    &__text
+      font-size: 28px
+      margin-top: 10px
+
+  .work-step-icon,
+  .arrow
+    font-size: 80px
 
 // ---------------------------------------
 // Screen resolution from 1600px to 1920px
@@ -37,20 +49,34 @@
   .work-step-icon,
   .arrow
     font-size: 60px
+
 // ---------------------------------------
 // Screen resolution from 1200px to 1600px
 // ---------------------------------------
 @media (min-width: 1200px) and (max-width: 1599.98px)
+  .work-steps
+    padding: 60px 0
 
+  .work-step
+    &__text
+      font-size: 20px
+      margin-top: 10px
+
+  .work-step-icon,
+  .arrow
+    font-size: 42px
 // ---------------------------------------
 // Screen resolution from 900px to 1200px
 // ---------------------------------------
 @media (min-width: 900px) and (max-width: 1199.98px)
+  .work-steps
+    display: none
 
 // ---------------------------------------
 // Screen resolution from 600px to 900px
 // ---------------------------------------
 @media (min-width: 600px) and (max-width: 899.98px)
+
 
 // ---------------------------------------
 // Screen resolution from 320px to 600px
