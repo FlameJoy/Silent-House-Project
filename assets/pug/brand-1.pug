@@ -1,0 +1,25 @@
+doctype html
+html(lang="ru en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Тихий Дом
+    // ------------------- 
+    // Styles & animations 
+    // ------------------- 
+    link(rel="stylesheet", href="assets/css/reset.css")
+    link(rel="stylesheet", href="assets/css/google-fonts.css")
+    link(rel="stylesheet", href="assets/css/main.min.css")
+    link(rel="stylesheet", href="assets/css/animate.min.css")
+    //- link(rel="shortcut icon" href="assets/images/src/favicon.ico" type="image/x-icon")
+  body.page
+    include ../blocks/sticky-header/sticky-header.pug
+    include ../blocks/brands/descriptions/brand-1-info.pug
+    include ../blocks/footer/footer.pug
+    // ------------------- 
+    // Scripts & libraries 
+    // ------------------- 
+    script(src="assets/js/main.min.js")
+    script(src="https://kit.fontawesome.com/36446de779.js" crossorigin="anonymous") 
+    //- script(src="assets/js/jquery.maskedinput.min.js")

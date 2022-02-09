@@ -590,3 +590,14 @@ Ant2.initialize = function(that) {
 };
 
 new Ant2();
+
+// Modal window
+// Get the modal
+let modal = document.getElementById('feedback');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

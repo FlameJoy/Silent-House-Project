@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тихий Дом</title>
+    <!-- ------------------- -->
+    <!-- Styles & animations -->
+    <!-- ------------------- -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/google-fonts.css">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="container">
+        <div class="sticky-header">
+          <!-- ---------------->
+          <!-- Logo-->
+          <!-- ----------------><a class="logo-container" href="index.html"><img class="logo-img" src="assets/images/dest/logo.jpg" alt="logo-img"><span class="logo-description">Тихий дом</span></a>
+          <!-- ---------------->
+          <!-- Navigation-->
+          <!-- ---------------->
+          <nav class="sticky-header-nav"> 
+            <ul class="sticky-header-nav__list">
+              <li class="sticky-header-nav__item"> <a class="sticky-header-nav__link">Портфолио</a></li>
+              <li class="sticky-header-nav__item"> <a class="sticky-header-nav__link">Калькулятор</a></li>
+              <li class="sticky-header-nav__item"> <a class="sticky-header-nav__link">Отзывы клиентов</a></li>
+            </ul>
+          </nav>
+          <!-- ---------------->
+          <!-- Call btn-->
+          <!-- ---------------->
+          <div class="call"><a class="call-whatsup" href="https://api.whatsapp.com/send/?phone=79629270566"><i class="fab fa-whatsapp-square"></i></a><a class="call-phone" href="tel:+79629270566"><i class="fas fa-phone-square-alt"></i></a></div>
+          <!-- Call form-->
+          <div class="modal" id="feedback">
+            <form class="feedback-form" action="assets/php/action.php" method="post" name="feedback-form"><span class="feedback-form__close-btn" onclick="document.getElementById('feedback').style.display='none'">&times;</span>
+              <div class="feedback-wrap">
+                <div class="feedback-form-left"> 
+                  <div class="logo-container"> <img class="logo-img" src="assets/images/dest/logo.jpg" alt="logo-img"><span class="logo-description">Тихий дом</span></div>
+                  <p class="feedback-form-left-wrap"><i class="fa-solid fa-phone feedback-form-icon"></i><span class="feedback-form-left__text">Перезвоним вам для замера</span></p>
+                  <p class="feedback-form-left-wrap"><i class="fa-solid fa-percent feedback-form-icon"></i><span class="feedback-form-left__text">Подскажем как сэкономить на ремонте</span></p>
+                  <p class="feedback-form-left-wrap"><i class="fa-solid fa-list feedback-form-icon"></i><span class="feedback-form-left__text">Составим подробную смету</span></p>
+                </div>
+                <div class="feedback-form-content">
+                  <label class="feedback-form__input-name" for="name">Как вас зовут</label>
+                  <input class="feedback-form__input" type="text" id="name" name="name" minlength="2" maxlength="20" pattern="^[а-яА-ЯёЁa-zA-Z]{1,20}$" placeholder="Ваше имя" onkeypress="noDigits(event)" required>
+                  <label class="feedback-form__input-name" for="phone">Введите номер телефона</label>
+                  <input class="feedback-form__input" type="tel" id="phone" name="phone" pattern="^((8|+7)[- ]?)?((?d{3})?[- ]?)?[d- ]{7,10}$" minlength="20" maxlength="20" placeholder="+7 (XXX) XXX-XX-XX" required>
+                  <label class="feedback-form__input-name" for="message">Сообщение</label>
+                  <textarea class="feedback-form__textarea" type="textarea" name="message"></textarea>
+                  <button class="btn feedback-form__btn" type="submit" onclick="document.getElementById('sendform').style.display = 'block'">Заказать звонок</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="brand-info">
+      <div class="container"> 
+        <div class="brand-info-container"> 
+          <div class="brand-info-header">
+            <h2 class="brand-info-header__title">Виброфлор</h2>
+            <h3 class="brand-info-header__subtitle"></h3>
+          </div>
+          <div class="brand-info-content">
+            <div class="brand-info-img-container"><img class="brand-info__img" src="assets/images/dest/MATERIALS/brand-img-3.png" alt="brand-img-3"></div>
+            <div class="brand-info-description-container">
+              <div class="brand-info-description__text">Бренд: Виброфлор</div>
+              <div class="brand-info-description__text">Поставщик: ТехноСонус</div>
+              <div class="brand-info-description__text">Подложка для звукоизоляции полов (под стяжку/под финишное напольное покрытие) из полиэфирного волокна. Нетканый, упругий холст из полиэфирного волокна первичной обработки, без содержания связующих добавок.</div>
+              <div class="brand-info-description__text">Особенности и преимущества:</div>
+              <ul class="brand-info-description-list">
+                <li class="brand-info-description__item">Экологический чистый и безопасный материал</li>
+                <li class="brand-info-description__item">Не выделяет едкой пыли, не вызывает зуд и раздражение</li>
+                <li class="brand-info-description__item">Экономичный материал</li>
+                <li class="brand-info-description__item">Легкость в монтаже</li>
+                <li class="brand-info-description__item">Воздухо- и паропроницаемость, что обеспечивает отсутствие парникового эффекта и циркуляцию воздуха под напольным покрытием</li>
+                <li class="brand-info-description__item">Незначительная гигроскопичность в сравнении с другими синтетическими волокнистыми материалами</li>
+                <li class="brand-info-description__item">Долговечность и биологическая устойчивость</li>
+                <li class="brand-info-description__item">Акустический комфорт в помещении</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container"> 
+        <div class="footer-container">
+          <div class="footer-header">
+            <h2 class="footer-header__title">Контакты</h2>
+            <h3 class="footer-header__subtitle"></h3>
+          </div>
+          <div class="footer-content"> 
+            <div class="footer-contacts">
+              <div class="footer-contacts-box"><i class="far fa-clock footer-icon"></i>
+                <p class="footer-box__text">Мы работаем: </p>
+                <p class="footer-box__text">с 09:00 до 22:00 </p>
+              </div>
+              <div class="footer-contacts-box"><i class="fas fa-map-marked-alt footer-icon"></i>
+                <p class="footer-box__text">Мы находимся здесь: </p>
+                <p class="footer-box__text">Неизвестная улица, д.1, к.1</p>
+              </div>
+              <div class="footer-contacts-box"><a class="link" href="https://api.whatsapp.com/send/?phone=79643920409&amp;text=Здравствуйте%2C+у+меня+есть+вопрос"><i class="fas fa-phone-volume footer-icon"></i></a>
+                <p class="footer-box__text">Звоните по телефону: </p>
+                <p class="footer-box__text">+7 (***)-***-**-**</p>
+              </div>
+              <div class="footer-contacts-box"><i class="far fa-envelope footer-icon"></i>
+                <p class="footer-box__text">Почта: </p>
+                <p class="footer-box__text">silent-house@info.com</p>
+              </div>
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-social"><a class="footer-social-instagram" href="https://www.instagram.com/silent_house__/" target="_blanc"><i class="fab fa-instagram"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ------------------- -->
+    <!-- Scripts & libraries -->
+    <!-- ------------------- -->
+    <script src="assets/js/main.min.js"></script>
+    <script src="https://kit.fontawesome.com/36446de779.js" crossorigin="anonymous"> </script>
+  </body>
+</html>

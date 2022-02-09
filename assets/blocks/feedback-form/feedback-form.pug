@@ -1,0 +1,25 @@
+#feedback.modal
+  form.feedback-form(action="assets/php/action.php" method="post" name="feedback-form")
+          span.feedback-form__close-btn(onclick="document.getElementById('feedback').style.display='none'") &times;
+          .feedback-wrap
+            .feedback-form-left 
+              .logo-container 
+                img.logo-img(src="assets/images/dest/logo.jpg" alt="logo-img")
+                span.logo-description Тихий дом
+              p.feedback-form-left-wrap
+                i.fa-solid.fa-phone.feedback-form-icon
+                span.feedback-form-left__text Перезвоним вам для замера
+              p.feedback-form-left-wrap
+                i.fa-solid.fa-percent.feedback-form-icon
+                span.feedback-form-left__text Подскажем как сэкономить на ремонте
+              p.feedback-form-left-wrap
+                i.fa-solid.fa-list.feedback-form-icon
+                span.feedback-form-left__text Составим подробную смету
+            .feedback-form-content
+              label.feedback-form__input-name(for="name") Как вас зовут
+              input.feedback-form__input(type="text" id="name" name="name" minlength="2" maxlength="20" pattern="^[а-яА-ЯёЁa-zA-Z]{1,20}$" placeholder="Ваше имя" onkeypress="noDigits(event)" required)
+              label.feedback-form__input-name(for="phone") Введите номер телефона
+              input.feedback-form__input(type="tel" id="phone" name="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" minlength="20" maxlength="20" placeholder="+7 (XXX) XXX-XX-XX" required)
+              label.feedback-form__input-name(for="message") Сообщение
+              textarea.feedback-form__textarea(type="textarea" name="message")
+              button.btn.feedback-form__btn(type="submit" onclick="document.getElementById('sendform').style.display = 'block'") Заказать звонок

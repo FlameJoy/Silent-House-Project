@@ -1,0 +1,170 @@
+.brand-info-content
+  @extend %flex-row
+  align-items: start
+
+.brand-info-img-container
+  width: 40%
+
+.brand-info-description-container
+  width: 60%
+  @extend %font-play-normal
+
+.brand-info-description__item 
+  &::before
+    font-family: FontAwesome
+    content: "\f058"
+    color: $color-yellow
+
+// ---------------------------------------
+// Adaptivity
+// ---------------------------------------
+// Screen resolution from 1920px and more
+// ---------------------------------------
+@media (min-width: 1920px)
+  .brand-info-container 
+    margin: 12% 0
+
+  .brand-info
+    &__img
+      width: 500px
+      height: 350px
+
+  .brand-info-description__text,
+  .brand-info-description__item 
+    padding: 10px 0
+    font-size: 24px
+
+  .brand-info-description__item 
+    &::before
+      margin-right: 8px
+
+// ---------------------------------------
+// Screen resolution from 1600px to 1920px
+// ---------------------------------------
+@media (min-width: 1600px) and (max-width: 1919.98px)
+  .brand-info-container 
+    margin: 12% 0
+
+  .brand-info
+    &__img
+      width: 450px
+      height: 320px
+
+  .brand-info-description__text,
+  .brand-info-description__item 
+    padding: 10px 0
+    font-size: 20px
+
+  .brand-info-description__item 
+    &::before
+      margin-right: 8px
+
+// ---------------------------------------
+// Screen resolution from 1200px to 1600px
+// ---------------------------------------
+@media (min-width: 1200px) and (max-width: 1599.98px)
+  .brand-info-container 
+    margin: 12% 0
+
+  .brand-info
+    &__img
+      width: 360px
+      height: 280px
+
+  .brand-info-description__text,
+  .brand-info-description__item 
+    padding: 8px 0
+    font-size: 18px
+
+  .brand-info-description__item 
+    &::before
+      margin-right: 6px
+
+// ---------------------------------------
+// Screen resolution from 900px to 1200px
+// ---------------------------------------
+@media (min-width: 900px) and (max-width: 1199.98px)
+  .brand-info-container 
+    margin: 12% 0
+
+  .brand-info
+    &__img
+      width: 280px
+      height: 180px
+
+  .brand-info-description__text,
+  .brand-info-description__item 
+    padding: 6px 0
+    font-size: 16px
+
+  .brand-info-description__item 
+    &::before
+      margin-right: 6px
+
+// ---------------------------------------
+// Screen resolution from 600px to 900px
+// ---------------------------------------
+@media (min-width: 600px) and (max-width: 899.98px)
+  .brand-info-content
+    flex-direction: column
+    justify-content: center
+
+  .brand-info-img-container,
+  .brand-info-description-container
+    width: 100%
+    margin: 0 auto
+
+  .brand-info-container 
+    margin: 35% 0
+
+  .brand-info-img-container
+    display: flex
+    justify-content: center
+
+  .brand-info
+    &__img
+      width: 350px
+      height: 250px
+
+  .brand-info-description__text,
+  .brand-info-description__item 
+    padding: 6px 0
+    font-size: 18px
+
+  .brand-info-description__item 
+    &::before
+      margin-right: 6px
+
+// ---------------------------------------
+// Screen resolution from 320px to 600px
+// ---------------------------------------
+@media (min-width: 320px) and (max-width: 599.98px)
+  .brand-info-content
+    flex-direction: column
+    justify-content: center
+
+  .brand-info-img-container,
+  .brand-info-description-container
+    width: 100%
+    margin: 0 auto
+
+  .brand-info-container 
+    margin: 40% 0
+
+  .brand-info-img-container
+    display: flex
+    justify-content: center
+
+  .brand-info
+    &__img
+      width: 300px
+      height: 200px
+
+  .brand-info-description__text,
+  .brand-info-description__item 
+    padding: 6px 0
+    font-size: 16px
+
+  .brand-info-description__item 
+    &::before
+      margin-right: 6px

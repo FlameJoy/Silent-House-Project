@@ -4,7 +4,7 @@ header.header
       // --------------
       // Logo
       // --------------
-      .logo-container 
+      a.logo-container(href="index.html")
         img.logo-img(src="assets/images/dest/logo.jpg" alt="logo-img")
         span.logo-description Тихий дом
       // --------------
@@ -26,3 +26,5 @@ header.header
           i.fab.fa-whatsapp-square
         a.call-phone(href="tel:+79629270566")
           i.fas.fa-phone-square-alt
+      // Call form
+      include ../feedback-form/feedback-form.pug
