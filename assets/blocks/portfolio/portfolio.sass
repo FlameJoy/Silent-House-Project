@@ -36,11 +36,11 @@
   color: $color-yellow
   font-weight: bold
   transition: 0.6s ease
-  border-radius: 0 3px 3px 0
+  border-radius: 3px 
   user-select: none
 
 .portfolio-next-btn
-  border-radius: 3px 0 0 3px
+  border-radius: 3px
 
 .portfolio-prev-btn:hover, .portfolio-next-btn:hover 
   background-color: rgba(0,0,0,0.8)
@@ -56,6 +56,15 @@
   border-radius: 50%
   display: inline-block
   transition: background-color 0.6s ease
+
+.portfolio-slider-description
+  @extend %font-play-bold
+  text-align: center
+  background-color: $color-yellow
+  padding: 4px 8px
+  border-radius: 15px 0 15px 0
+  margin: 1% auto
+  line-height: 1.2em
 
 // ---------------------------------------
 // Adaptivity
@@ -101,7 +110,10 @@
   .portfolio-slider-dot6
     height: 15px
     width: 15px
-    margin: 0 4px
+    margin: 4% 4px 0
+
+  .portfolio-slider-description
+    font-size: 24px
 
 // ---------------------------------------
 // Screen resolution from 1600px to 1920px
@@ -145,7 +157,11 @@
   .portfolio-slider-dot6
     height: 15px
     width: 15px
-    margin: 0 4px
+    margin: 4% 4px 0
+
+  .portfolio-slider-description
+    font-size: 20px
+    margin: 2% auto
 
 // ---------------------------------------
 // Screen resolution from 1200px to 1600px
@@ -189,7 +205,11 @@
   .portfolio-slider-dot6
     height: 15px
     width: 15px
-    margin: 0 4px
+    margin: 6% 4px 0
+
+  .portfolio-slider-description
+    font-size: 20px
+    margin: 2% auto
 
 // ---------------------------------------
 // Screen resolution from 900px to 1200px
@@ -233,7 +253,10 @@
   .portfolio-slider-dot6
     height: 15px
     width: 15px
-    margin: 0 4px
+    margin: 6% 4px 0
+
+  .portfolio-slider-description
+    font-size: 20px
 
 // ---------------------------------------
 // Screen resolution from 600px to 900px
@@ -282,7 +305,11 @@
   .portfolio-slider-dot6
     height: 15px
     width: 15px
-    margin: 0 4px
+    margin: 8% 4px 0
+
+  .portfolio-slider-description
+    font-size: 20px
+    margin: 0 auto
 
 // ---------------------------------------
 // Screen resolution from 320px to 600px
@@ -331,4 +358,8 @@
   .portfolio-slider-dot6
     height: 15px
     width: 15px
-    margin: 0 4px
+    margin: 12% 4px 0
+
+  .portfolio-slider-description
+    font-size: 16px
+    margin: 0 auto
