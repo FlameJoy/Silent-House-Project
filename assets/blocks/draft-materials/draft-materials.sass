@@ -1,0 +1,82 @@
+.brands-footer
+  margin: 10% 0
+
+.soundproofing
+  &__text
+    @extend %font-play-normal
+    text-align: center
+  &__link
+    color: #0c6294
+    cursor: pointer
+    font-weight: 600
+    text-decoration: none
+    &::after
+      content: '\f0c1'
+      font-family: FontAwesome
+      color: #0c6294
+      padding: 0 10px
+
+.soundproofing-container
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    padding: 40px 0
+
+// ----------
+// Adaptivity
+// ----------
+// ----------------------------------------
+// Screen resolution from 1920px and higher
+// ----------------------------------------
+@media (min-width: 1920px)
+  .soundproofing
+    &__text
+      font-size: 24px
+      margin-top: 25px
+  
+// ---------------------------------------
+// Screen resolution from 1600px to 1920px
+// ---------------------------------------
+@media (min-width: 1600px) and (max-width: 1919.98px)
+  .soundproofing
+    &__text
+      font-size: 24px
+      margin-top: 25px
+
+// ---------------------------------------
+// Screen resolution from 1200px to 1600px
+// ---------------------------------------
+@media (min-width: 1200px) and (max-width: 1599.98px)
+  .soundproofing
+    &__text
+      font-size: 20px
+      margin-top: 25px
+
+// ---------------------------------------
+// Screen resolution from 900px to 1200px
+// ---------------------------------------
+@media (min-width: 900px) and (max-width: 1199.98px)
+  .soundproofing
+    &__text
+      font-size: 20px
+      margin-top: 25px
+
+// ---------------------------------------
+// Screen resolution from 600px to 900px
+// ---------------------------------------
+@media (min-width: 600px) and (max-width: 899.98px)
+  .soundproofing
+    &__text
+      font-size: 18px
+      margin-top: 20px
+
+// ---------------------------------------
+// Screen resolution from 320px to 600px
+// ---------------------------------------
+@media (min-width: 320px) and (max-width: 599.98px)
+  .soundproofing
+    &__text
+      font-size: 18px
+      margin-top: 20px
+      
