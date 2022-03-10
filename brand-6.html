@@ -25,15 +25,15 @@
           <!-- ---------------->
           <nav class="sticky-header-nav"> 
             <ul class="sticky-header-nav__list">
-              <li class="sticky-header-nav__item"> <a class="sticky-header-nav__link">Портфолио</a></li>
-              <li class="sticky-header-nav__item"> <a class="sticky-header-nav__link">Калькулятор</a></li>
-              <li class="sticky-header-nav__item"> <a class="sticky-header-nav__link">Отзывы клиентов</a></li>
+              <li class="sticky-header-nav__item"> <a class="scrollto sticky-header-nav__link" href="#portfolio">Портфолио</a></li>
+              <li class="sticky-header-nav__item"> <a class="scrollto sticky-header-nav__link" href="#calc">Калькулятор</a></li>
+              <li class="sticky-header-nav__item"> <a class="scrollto sticky-header-nav__link" href="#review">Отзывы клиентов</a></li>
             </ul>
           </nav>
           <!-- ---------------->
           <!-- Call btn-->
           <!-- ---------------->
-          <div class="call"><a class="call-whatsup" href="https://api.whatsapp.com/send/?phone=79629270566"><i class="fab fa-whatsapp-square"></i></a><a class="call-phone" href="tel:+79629270566"><i class="fas fa-phone-square-alt"></i></a></div>
+          <div class="call"><a class="call-whatsup" href="https://api.whatsapp.com/send/?phone=79629270566"><i class="fab fa-whatsapp-square"></i></a><a class="call-phone" href="tel:+79629270566" onclick="document.getElementById('feedback').style.display='block'"><i class="fas fa-phone-square-alt"></i></a></div>
           <!-- Call form-->
           <div class="modal" id="feedback">
             <form class="feedback-form" action="assets/php/action.php" method="post" name="feedback-form"><span class="feedback-form__close-btn" onclick="document.getElementById('feedback').style.display='none'">&times;</span>

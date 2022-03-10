@@ -13,18 +13,18 @@ header.header
       nav.sticky-header-nav 
         ul.sticky-header-nav__list
           li.sticky-header-nav__item 
-            a.sticky-header-nav__link Портфолио
+            a(href="#portfolio").scrollto.sticky-header-nav__link Портфолио
           li.sticky-header-nav__item 
-            a.sticky-header-nav__link Калькулятор
+            a(href="#calc").scrollto.sticky-header-nav__link Калькулятор
           li.sticky-header-nav__item 
-            a.sticky-header-nav__link Отзывы клиентов
+            a(href="#review").scrollto.sticky-header-nav__link Отзывы клиентов
       // --------------
       // Call btn
       // --------------
       .call
         a.call-whatsup(href="https://api.whatsapp.com/send/?phone=79629270566")
           i.fab.fa-whatsapp-square
-        a.call-phone(href="tel:+79629270566")
+        a.call-phone(href="tel:+79629270566" onclick="document.getElementById('feedback').style.display='block'")
           i.fas.fa-phone-square-alt
       // Call form
       include ../feedback-form/feedback-form.pug
