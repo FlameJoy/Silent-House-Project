@@ -31,7 +31,7 @@ section.head
           .calc-container
             .calc-header 
               .calc-header__title Расскажите нам о вашей квартире и мы рассчитаем смету за 30 мин! 
-            form.calc-form
+            .calc-form
               .calc-form-radiocontainer-wrap
                 fieldset.renovation-type 
                   legend.renovation-type__title Какой ремонт хотите? 
@@ -55,8 +55,10 @@ section.head
               .calc-square
                 fieldset.calc-square-wrap 
                   legend.calc-square__title Укажите площадь квартиры: 
-                  input.calc-square__num(type="text" value="10")
-                  input.calc-square__range(type="range" name="square" id="square" min='10' max='250' step="10")
+                  input#output.calc-square__num(type="text")
+                  span.calc-square__title м
+                    sup.sup 2
+                  input#range.calc-square__range(type="range" min='10' max='250' value="45" required)
               .calc-materials 
                 fieldset.materials 
                   legend.materials__title Вам нужны материалы?
@@ -67,7 +69,7 @@ section.head
                     input.materials-checkbox__input(type="checkbox")
                     span.calc-input__text Нужны чистовые
               .calc-btn-container
-                button.btn.calc__btn(type="submit") Рассчитать
+                button.btn.calc__btn(onclick="document.getElementById('feedback').style.display='block'") Рассчитать
 
 
 

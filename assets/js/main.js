@@ -613,3 +613,15 @@ jQuery(document).ready(function() {
   return false;
   });
 });
+
+//Ползунок
+$(document).ready(function(){
+	$('#output').val($('#range').val());
+	$('#range').mousemove(function() {
+		$('#output').val($('#range').val());
+	});
+
+	$('#output').change(function() {
+		$('#range').val($('#output').val());
+	});
+})

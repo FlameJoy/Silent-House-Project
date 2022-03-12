@@ -27,7 +27,8 @@
 .portfolio-slider-img
   height: 100%
   width: 100%
-  border-radius: 6px
+  border-radius: 8px
+  margin-top: 2%
   object-fit: contain
 
 .portfolio-prev-btn, .portfolio-next-btn
@@ -67,6 +68,22 @@
   margin: 1% auto
   line-height: 1.2em
 
+.portfolio-slider-img-wrap
+  @extend %flex-row
+  justify-content: space-between
+
+.portfolio-slider-info
+  @extend %flex-column
+  max-width: 300px
+  min-width: 200px
+  &__text
+    @extend %font-play-bold
+    text-align: center
+    line-height: 1.2em
+    background-color: #fff
+    border-radius: 8px
+    padding: 4px 8px
+
 // ---------------------------------------
 // Adaptivity
 // ---------------------------------------
@@ -86,8 +103,8 @@
   .portfolioSlides4,
   .portfolioSlides5,
   .portfolioSlides6
-    width: 1050px
-    height: 800px
+    width: 1000px
+    height: 100%
 
   .portfolio-prev-btn, 
   .portfolio-next-btn
@@ -97,11 +114,10 @@
     font-size: 42px
 
   .portfolio-prev-btn
-    left: 242px
+    left: 80px
 
   .portfolio-next-btn
-    right: 243px
-    border-radius: 3px 0 0 3px
+    right: 80px
 
   .portfolio-slider-dot1,
   .portfolio-slider-dot2,
@@ -115,6 +131,14 @@
 
   .portfolio-slider-description
     font-size: 24px
+
+  .portfolio-slider-img-wrap
+    gap: 30px
+
+  .portfolio-slider-info
+    gap: 30px
+    &__text
+      font-size: 24px
 
 // ---------------------------------------
 // Screen resolution from 1600px to 1920px
@@ -133,8 +157,8 @@
   .portfolioSlides4,
   .portfolioSlides5,
   .portfolioSlides6
-    width: 800px
-    height: 550px
+    width: 1000px
+    height: 100%
 
   .portfolio-prev-btn, 
   .portfolio-next-btn
@@ -164,6 +188,14 @@
     font-size: 20px
     margin: 2% auto
 
+  .portfolio-slider-img-wrap
+    gap: 30px
+
+  .portfolio-slider-info
+    gap: 30px
+    &__text
+      font-size: 24px
+      
 // ---------------------------------------
 // Screen resolution from 1200px to 1600px
 // ---------------------------------------
@@ -182,7 +214,7 @@
   .portfolioSlides5,
   .portfolioSlides6
     width: 800px
-    height: 550px
+    height: 100%
 
   .portfolio-prev-btn, 
   .portfolio-next-btn
@@ -192,11 +224,10 @@
     font-size: 30px
 
   .portfolio-prev-btn
-    left: 80px
+    left: 20px
 
   .portfolio-next-btn
-    right: 80px
-    border-radius: 3px 0 0 3px
+    right: 20px
 
   .portfolio-slider-dot1,
   .portfolio-slider-dot2,
@@ -211,6 +242,14 @@
   .portfolio-slider-description
     font-size: 20px
     margin: 2% auto
+
+  .portfolio-slider-img-wrap
+    gap: 30px
+
+  .portfolio-slider-info
+    gap: 30px
+    &__text
+      font-size: 20px
 
 // ---------------------------------------
 // Screen resolution from 900px to 1200px
@@ -230,7 +269,7 @@
   .portfolioSlides5,
   .portfolioSlides6
     width: 800px
-    height: 550px
+    height: 100%
 
   .portfolio-prev-btn, 
   .portfolio-next-btn
@@ -258,6 +297,14 @@
 
   .portfolio-slider-description
     font-size: 20px
+
+  .portfolio-slider-img-wrap
+    gap: 10px
+
+  .portfolio-slider-info
+    gap: 30px
+    &__text
+      font-size: 20px
 
 // ---------------------------------------
 // Screen resolution from 600px to 900px
@@ -282,7 +329,7 @@
   .portfolioSlides5,
   .portfolioSlides6
     width: 600px
-    height: 450px
+    height: 100%
 
   .portfolio-prev-btn, 
   .portfolio-next-btn
@@ -296,7 +343,6 @@
 
   .portfolio-next-btn
     right: 0px
-    border-radius: 3px 0 0 3px
 
   .portfolio-slider-dot1,
   .portfolio-slider-dot2,
@@ -311,6 +357,12 @@
   .portfolio-slider-description
     font-size: 20px
     margin: 0 auto
+
+  .portfolio-slider-img-wrap
+    gap: 0
+
+  .portfolio-slider-info
+    display: none
 
 // ---------------------------------------
 // Screen resolution from 320px to 600px
@@ -335,21 +387,20 @@
   .portfolioSlides5,
   .portfolioSlides6
     width: 320px
-    height: 250px
+    height: 100%
 
   .portfolio-prev-btn, 
   .portfolio-next-btn
-    top: 49%
+    top: 45%
     margin-top: -22px
-    padding: 16px
-    font-size: 30px
+    padding: 10px
+    font-size: 24px
 
   .portfolio-prev-btn
     left: 0px
 
   .portfolio-next-btn
     right: 0px
-    border-radius: 3px 0 0 3px
 
   .portfolio-slider-dot1,
   .portfolio-slider-dot2,
@@ -362,5 +413,11 @@
     margin: 12% 4px 0
 
   .portfolio-slider-description
-    font-size: 16px
+    font-size: 10px
     margin: 0 auto
+
+  .portfolio-slider-img-wrap
+    gap: 0
+
+  .portfolio-slider-info
+    display: none
